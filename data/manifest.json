@@ -1,0 +1,79 @@
+{
+  "run_id": "20260524_165644",
+  "created_at": "2026-05-24T16:56:44.414882",
+  "pipeline_version": "1.0.0",
+  "corpus": {
+    "total_papers": 274,
+    "year_band_distribution": {
+      "2025-2026-latest": 100,
+      "2020-foundational": 30,
+      "2021-2022-improvements": 40,
+      "2023-2024-llm-rag": 80,
+      "foundational": 24
+    },
+    "year_distribution": {
+      "2014": 3,
+      "2015": 3,
+      "2016": 1,
+      "2017": 2,
+      "2018": 3,
+      "2019": 8,
+      "2020": 33,
+      "2021": 10,
+      "2022": 31,
+      "2023": 38,
+      "2024": 42,
+      "2025": 50,
+      "2026": 50
+    },
+    "categories": [
+      "cs.LG",
+      "cs.CL"
+    ],
+    "date_range": "2020-2026"
+  },
+  "extraction": {
+    "primary_method": "grobid_0.8.0",
+    "fallback_method": "pymupdf_1.24.0",
+    "grobid_papers": 274,
+    "fallback_papers": 1
+  },
+  "chunks": {
+    "abstract_chunks": 273,
+    "parent_chunks": 9310,
+    "child_chunks": 16739,
+    "total_chunks": 26322,
+    "extraction_method_breakdown": {
+      "grobid": 16714,
+      "pymupdf_fallback": 25
+    },
+    "chunk_files": {
+      "abstract": "C:\\Users\\dhrup\\OneDrive\\Desktop\\PaperPilot\\data\\chunks\\chunks_abstract.json",
+      "parent": "C:\\Users\\dhrup\\OneDrive\\Desktop\\PaperPilot\\data\\chunks\\chunks_parent.json",
+      "child": "C:\\Users\\dhrup\\OneDrive\\Desktop\\PaperPilot\\data\\chunks\\chunks_child.json"
+    }
+  },
+  "embedding": {
+    "model": "BAAI/bge-large-en-v1.5",
+    "dimensions": 1024,
+    "index_type": "pinecone_serverless",
+    "status": "pending"
+  },
+  "validation": {
+    "critical_issues": 0,
+    "warnings": 25,
+    "warning_type": "symbol_heavy_chunks",
+    "decision": "accepted — table/equation blocks, negligible impact on retrieval"
+  },
+  "enrichment": {
+    "source": "openalex",
+    "status": "pending",
+    "enriched_papers": 0,
+    "provides": [
+      "citation_count",
+      "reference_links",
+      "concepts"
+    ]
+  },
+  "notes": "Initial corpus — 250 papers, pre-embedding state"
+}

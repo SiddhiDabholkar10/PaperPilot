@@ -1,0 +1,263 @@
+[
+  {
+    "id": "Q001",
+    "type": "comparison",
+    "question": "What are the differences between BPE and the convex optimization approach to tokenization, and what metrics show improvement?",
+    "required_papers": ["2605.22821", "2312.11779"],
+    "required_hops": 2,
+    "gold_answer_hints": [
+      "BPE is greedy and locally optimal",
+      "ConvexTok uses linear programming",
+      "bits-per-byte improvement",
+      "vocabulary size"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "Q002",
+    "type": "bridge",
+    "question": "How did rotary position embeddings introduced in RoFormer influence later work on linear attention mechanisms?",
+    "required_papers": ["2104.09864", "2507.16577"],
+    "required_hops": 2,
+    "gold_answer_hints": [
+      "RoFormer introduced RoPE",
+      "relative position encoding",
+      "linear attention scaling"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "Q003",
+    "type": "comparison",
+    "question": "How do LoRA-based fine-tuning methods differ in their approach to handling spurious tokens and catastrophic forgetting?",
+    "required_papers": ["2506.11402", "2312.03732", "2503.08045"],
+    "required_hops": 3,
+    "gold_answer_hints": [
+      "LoRA rank stabilization",
+      "spurious token manipulation",
+      "parameter efficient fine-tuning"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "Q004",
+    "type": "bridge",
+    "question": "What methods for mitigating hallucination in LLMs were proposed in 2023, and how do they relate to retrieval augmented approaches?",
+    "required_papers": ["2311.09114", "2503.20201"],
+    "required_hops": 2,
+    "gold_answer_hints": [
+      "hallucination mitigation",
+      "retrieval augmented generation",
+      "verification"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "Q005",
+    "type": "comparison",
+    "question": "What are the trade-offs between memory efficiency and performance in KV-cache compression methods for LLMs?",
+    "required_papers": ["2503.11108", "2401.09486"],
+    "required_hops": 2,
+    "gold_answer_hints": [
+      "KV cache compression",
+      "memory trade-off",
+      "attention efficiency"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "Q006",
+    "type": "aggregation",
+    "question": "How have data augmentation techniques for NLP evolved from 2020 to 2024?",
+    "required_papers": ["2401.15422", "2312.03743", "2006.05477"],
+    "required_hops": 3,
+    "gold_answer_hints": [
+      "data augmentation survey",
+      "paraphrase generation",
+      "large model era"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "Q007",
+    "type": "bridge",
+    "question": "How does the constitutional classifier approach defend against adversarial attacks compared to earlier adversarial training methods?",
+    "required_papers": ["2501.18837", "2403.00888"],
+    "required_hops": 2,
+    "gold_answer_hints": [
+      "constitutional classifiers",
+      "adversarial training",
+      "robustness"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "Q008",
+    "type": "comparison",
+    "question": "What approaches do papers from 2023-2024 take to improve LLM reasoning, and how do chain-of-thought methods compare to reinforcement learning approaches?",
+    "required_papers": ["2501.11284", "2502.06781"],
+    "required_hops": 2,
+    "gold_answer_hints": [
+      "chain of thought",
+      "reinforcement learning",
+      "reasoning improvement"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "Q009",
+    "type": "bridge",
+    "question": "How do self-supervised pre-training methods for audio differ from those used for text, and what shared principles emerge?",
+    "required_papers": ["2104.01027", "2401.03497"],
+    "required_hops": 2,
+    "gold_answer_hints": [
+      "wav2vec",
+      "self-supervised",
+      "domain shift"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "Q010",
+    "type": "comparison",
+    "question": "How do mixture of experts approaches compare to standard transformer architectures in terms of efficiency and specialization?",
+    "required_papers": ["2207.09094", "2404.05741"],
+    "required_hops": 2,
+    "gold_answer_hints": [
+      "mixture of experts",
+      "inference efficiency",
+      "specialization"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "Q011",
+    "type": "bridge",
+    "question": "What role does knowledge distillation play in making large language models more efficient, and how have distillation techniques evolved?",
+    "required_papers": ["2312.04193", "2504.11426", "2401.17574"],
+    "required_hops": 3,
+    "gold_answer_hints": [
+      "knowledge distillation",
+      "model compression",
+      "efficiency"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "Q012",
+    "type": "comparison",
+    "question": "How do different approaches to continual learning in NLP address catastrophic forgetting?",
+    "required_papers": ["2605.22743", "2312.11441"],
+    "required_hops": 2,
+    "gold_answer_hints": [
+      "continual learning",
+      "catastrophic forgetting",
+      "sequential adaptation"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "Q013",
+    "type": "bridge",
+    "question": "How has the evaluation of LLM creativity and open-ended generation quality been approached, and what benchmarks exist?",
+    "required_papers": ["2312.03746", "2008.03964"],
+    "required_hops": 2,
+    "gold_answer_hints": [
+      "LLM creativity evaluation",
+      "benchmark evaluation",
+      "open-ended generation"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "Q014",
+    "type": "aggregation",
+    "question": "What are the main approaches to multilingual NLP and how do cross-lingual transfer methods compare across different language families?",
+    "required_papers": ["2501.13943", "2403.04792", "2310.11589"],
+    "required_hops": 3,
+    "gold_answer_hints": [
+      "cross-lingual transfer",
+      "multilingual",
+      "zero-shot"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "Q015",
+    "type": "bridge",
+    "question": "How do retrieval-based methods for LLM memory compare to parametric memory approaches in terms of updatability and accuracy?",
+    "required_papers": ["2504.12523", "2504.12951"],
+    "required_hops": 2,
+    "gold_answer_hints": [
+      "retrieval augmented",
+      "parametric memory",
+      "knowledge updating"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "Q016",
+    "type": "comparison",
+    "question": "How do sparse and dense attention mechanisms differ in their approach to handling long sequences, and what are the computational trade-offs?",
+    "required_papers": ["2507.16577", "2401.09486"],
+    "required_hops": 2,
+    "gold_answer_hints": [
+      "sparse attention",
+      "linear attention",
+      "long context"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "Q017",
+    "type": "bridge",
+    "question": "How did early work on transformer interpretability in 2021-2022 influence later mechanistic interpretability research?",
+    "required_papers": ["2110.08412", "2401.12181"],
+    "required_hops": 2,
+    "gold_answer_hints": [
+      "transformer interpretability",
+      "attention analysis",
+      "universal neurons"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "Q018",
+    "type": "comparison",
+    "question": "What safety evaluation frameworks exist for agentic AI systems, and how do they differ from single-turn model safety benchmarks?",
+    "required_papers": ["2605.22643", "2501.18837"],
+    "required_hops": 2,
+    "gold_answer_hints": [
+      "agentic safety",
+      "multi-turn benchmark",
+      "constitutional AI"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "Q019",
+    "type": "aggregation",
+    "question": "How have code generation capabilities of LLMs evolved, and what role do agent-based approaches play in modern code generation systems?",
+    "required_papers": ["2508.00083", "2401.14196"],
+    "required_hops": 2,
+    "gold_answer_hints": [
+      "code generation",
+      "LLM agents",
+      "DeepSeek"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "Q020",
+    "type": "bridge",
+    "question": "How do post-training alignment methods balance safety and capability, and what evidence exists for fundamental trade-offs?",
+    "required_papers": ["2503.20807", "2510.01167"],
+    "required_hops": 2,
+    "gold_answer_hints": [
+      "safety capability trade-off",
+      "post-training alignment",
+      "fine-tuning"
+    ],
+    "difficulty": "medium"
+  }
+]

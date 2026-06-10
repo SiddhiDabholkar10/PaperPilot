@@ -1,0 +1,39 @@
+# Environment & secrets
+.env
+*.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+.venv/
+venv/
+env/
+
+# Generated data artifacts
+data/raw/pdfs/
+data/raw/papers_metadata.json
+data/raw/papers_enriched.json
+data/raw/paper_references.json
+data/raw/dedup_report.json
+data/processed/
+data/chunks/
+data/embeddings/
+data/index/
+src/ingestion/data/
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+
+# Misc
+.DS_Store
+Thumbs.db
+*.log

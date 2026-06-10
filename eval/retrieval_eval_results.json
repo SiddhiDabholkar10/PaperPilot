@@ -1,0 +1,2670 @@
+{
+  "total_questions": 20,
+  "avg_recall": 0.675,
+  "perfect_recall": 9,
+  "zero_recall": 2,
+  "results": [
+    {
+      "id": "Q001",
+      "question": "What are the differences between BPE and the convex optimization approach to tok",
+      "type": "comparison",
+      "difficulty": "medium",
+      "required_papers": [
+        "2605.22821",
+        "2312.11779"
+      ],
+      "retrieved_papers": [
+        "2605.22705",
+        "2312.11779",
+        "2403.00788",
+        "1412.6980",
+        "2605.22821",
+        "2401.12168",
+        "2403.01757"
+      ],
+      "found": [
+        "2605.22821",
+        "2312.11779"
+      ],
+      "missed": [],
+      "recall": 1.0,
+      "hops": 2,
+      "top_results": [
+        {
+          "arxiv_id": "2605.22821",
+          "title": "Tokenisation via Convex Relaxations",
+          "rrf_score": 0.0164,
+          "citation_count": 0,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2312.11779",
+          "title": "Tokenization Matters: Navigating Data-Scarce Token",
+          "rrf_score": 0.0164,
+          "citation_count": 18,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2605.22821",
+          "title": "Tokenisation via Convex Relaxations",
+          "rrf_score": 0.0161,
+          "citation_count": 0,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "1412.6980",
+          "title": "Adam: A Method for Stochastic Optimization",
+          "rrf_score": 0.0161,
+          "citation_count": 1662,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2401.12168",
+          "title": "SpatialVLM: Endowing Vision-Language Models with S",
+          "rrf_score": 0.0159,
+          "citation_count": 765,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2401.12168",
+          "title": "SpatialVLM: Endowing Vision-Language Models with S",
+          "rrf_score": 0.0156,
+          "citation_count": 765,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2605.22705",
+          "title": "Tokenization with Split Trees",
+          "rrf_score": 0.0154,
+          "citation_count": 0,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2403.00788",
+          "title": "PRECISE Framework: GPT-based Text For Improved Rea",
+          "rrf_score": 0.0154,
+          "citation_count": 0,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2312.11779",
+          "title": "Tokenization Matters: Navigating Data-Scarce Token",
+          "rrf_score": 0.0152,
+          "citation_count": 18,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2403.01757",
+          "title": "How Multimodal Integration Boost the Performance o",
+          "rrf_score": 0.0152,
+          "citation_count": 25,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2605.22705",
+          "title": "Tokenization with Split Trees",
+          "rrf_score": 0.0,
+          "citation_count": 0,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2312.11779",
+          "title": "Tokenization Matters: Navigating Data-Scarce Token",
+          "rrf_score": 0.0,
+          "citation_count": 18,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2403.00788",
+          "title": "PRECISE Framework: GPT-based Text For Improved Rea",
+          "rrf_score": 0.0,
+          "citation_count": 0,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "1412.6980",
+          "title": "Adam: A Method for Stochastic Optimization",
+          "rrf_score": 0.0,
+          "citation_count": 1662,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2605.22821",
+          "title": "Tokenisation via Convex Relaxations",
+          "rrf_score": 0.0,
+          "citation_count": 0,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2401.12168",
+          "title": "SpatialVLM: Endowing Vision-Language Models with S",
+          "rrf_score": 0.0,
+          "citation_count": 765,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2403.01757",
+          "title": "How Multimodal Integration Boost the Performance o",
+          "rrf_score": 0.0,
+          "citation_count": 25,
+          "retrieval_method": "abstract_supplement"
+        }
+      ]
+    },
+    {
+      "id": "Q002",
+      "question": "How did rotary position embeddings introduced in RoFormer influence later work o",
+      "type": "bridge",
+      "difficulty": "hard",
+      "required_papers": [
+        "2507.16577",
+        "2104.09864"
+      ],
+      "retrieved_papers": [
+        "2403.01841",
+        "2507.16577",
+        "1910.10683",
+        "1901.02860",
+        "2401.17574",
+        "1904.10509",
+        "2403.04797",
+        "2104.09864",
+        "2102.09550"
+      ],
+      "found": [
+        "2507.16577",
+        "2104.09864"
+      ],
+      "missed": [],
+      "recall": 1.0,
+      "hops": 2,
+      "top_results": [
+        {
+          "arxiv_id": "2104.09864",
+          "title": "RoFormer: Enhanced Transformer with Rotary Positio",
+          "rrf_score": 0.0325,
+          "citation_count": 5173,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2104.09864",
+          "title": "RoFormer: Enhanced Transformer with Rotary Positio",
+          "rrf_score": 0.0315,
+          "citation_count": 5173,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "1910.10683",
+          "title": "Exploring the Limits of Transfer Learning with a U",
+          "rrf_score": 0.0304,
+          "citation_count": 2568,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2507.16577",
+          "title": "Scaling Linear Attention with Sparse State Expansi",
+          "rrf_score": 0.0302,
+          "citation_count": 3,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2401.17574",
+          "title": "Scavenging Hyena: Distilling Transformers into Lon",
+          "rrf_score": 0.0156,
+          "citation_count": 7,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2403.04797",
+          "title": "Found in the Middle: How Language Models Use Long ",
+          "rrf_score": 0.0152,
+          "citation_count": 80,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2102.09550",
+          "title": "Going Full-TILT Boogie on Document Understanding w",
+          "rrf_score": 0.0149,
+          "citation_count": 197,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "1904.10509",
+          "title": "Generating Long Sequences with Sparse Transformers",
+          "rrf_score": 0.0147,
+          "citation_count": 2483,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "1901.02860",
+          "title": "Transformer-XL: Attentive Language Models Beyond a",
+          "rrf_score": 0.0145,
+          "citation_count": 4319,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2403.01841",
+          "title": "Making Pre-trained Language Models Great on Tabula",
+          "rrf_score": 0.0143,
+          "citation_count": 73,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2403.01841",
+          "title": "Making Pre-trained Language Models Great on Tabula",
+          "rrf_score": 0.0,
+          "citation_count": 73,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2507.16577",
+          "title": "Scaling Linear Attention with Sparse State Expansi",
+          "rrf_score": 0.0,
+          "citation_count": 3,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "1910.10683",
+          "title": "Exploring the Limits of Transfer Learning with a U",
+          "rrf_score": 0.0,
+          "citation_count": 2568,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "1901.02860",
+          "title": "Transformer-XL: Attentive Language Models Beyond a",
+          "rrf_score": 0.0,
+          "citation_count": 4319,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2401.17574",
+          "title": "Scavenging Hyena: Distilling Transformers into Lon",
+          "rrf_score": 0.0,
+          "citation_count": 7,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "1904.10509",
+          "title": "Generating Long Sequences with Sparse Transformers",
+          "rrf_score": 0.0,
+          "citation_count": 2483,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2403.04797",
+          "title": "Found in the Middle: How Language Models Use Long ",
+          "rrf_score": 0.0,
+          "citation_count": 80,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2104.09864",
+          "title": "RoFormer: Enhanced Transformer with Rotary Positio",
+          "rrf_score": 0.0,
+          "citation_count": 5173,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2102.09550",
+          "title": "Going Full-TILT Boogie on Document Understanding w",
+          "rrf_score": 0.0,
+          "citation_count": 197,
+          "retrieval_method": "abstract_supplement"
+        }
+      ]
+    },
+    {
+      "id": "Q003",
+      "question": "How do LoRA-based fine-tuning methods differ in their approach to handling spuri",
+      "type": "comparison",
+      "difficulty": "hard",
+      "required_papers": [
+        "2312.03732",
+        "2506.11402",
+        "2503.08045"
+      ],
+      "retrieved_papers": [
+        "2508.00083",
+        "2605.22743",
+        "2503.08045",
+        "2501.18824",
+        "2605.22774",
+        "2503.05005",
+        "2506.11402",
+        "2401.09454"
+      ],
+      "found": [
+        "2506.11402",
+        "2503.08045"
+      ],
+      "missed": [
+        "2312.03732"
+      ],
+      "recall": 0.6666666666666666,
+      "hops": 3,
+      "top_results": [
+        {
+          "arxiv_id": "2506.11402",
+          "title": "LoRA Users Beware: A Few Spurious Tokens Can Manip",
+          "rrf_score": 0.0315,
+          "citation_count": 1,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2506.11402",
+          "title": "LoRA Users Beware: A Few Spurious Tokens Can Manip",
+          "rrf_score": 0.0164,
+          "citation_count": 1,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2401.09454",
+          "title": "Voila-A: Aligning Vision-Language Models with User",
+          "rrf_score": 0.0164,
+          "citation_count": 37,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2503.08045",
+          "title": "Adapting Large Language Models for Parameter-Effic",
+          "rrf_score": 0.0159,
+          "citation_count": 7,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2605.22774",
+          "title": "CogAdapt: Transferring Clinical ECG Foundation Mod",
+          "rrf_score": 0.0156,
+          "citation_count": 0,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2503.08045",
+          "title": "Adapting Large Language Models for Parameter-Effic",
+          "rrf_score": 0.0152,
+          "citation_count": 7,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2508.00083",
+          "title": "A Survey on Code Generation with LLM-based Agents",
+          "rrf_score": 0.0152,
+          "citation_count": 101,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2605.22743",
+          "title": "SeqLoRA: Bilevel Orthogonal Adaptation for Continu",
+          "rrf_score": 0.0149,
+          "citation_count": 0,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2501.18824",
+          "title": "Memory-Efficient Fine-Tuning of Transformers via T",
+          "rrf_score": 0.0147,
+          "citation_count": 8,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2503.05005",
+          "title": "Balcony: A Lightweight Approach to Dynamic Inferen",
+          "rrf_score": 0.0147,
+          "citation_count": 3,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2508.00083",
+          "title": "A Survey on Code Generation with LLM-based Agents",
+          "rrf_score": 0.0,
+          "citation_count": 101,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2605.22743",
+          "title": "SeqLoRA: Bilevel Orthogonal Adaptation for Continu",
+          "rrf_score": 0.0,
+          "citation_count": 0,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2503.08045",
+          "title": "Adapting Large Language Models for Parameter-Effic",
+          "rrf_score": 0.0,
+          "citation_count": 7,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2501.18824",
+          "title": "Memory-Efficient Fine-Tuning of Transformers via T",
+          "rrf_score": 0.0,
+          "citation_count": 8,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2605.22774",
+          "title": "CogAdapt: Transferring Clinical ECG Foundation Mod",
+          "rrf_score": 0.0,
+          "citation_count": 0,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2503.05005",
+          "title": "Balcony: A Lightweight Approach to Dynamic Inferen",
+          "rrf_score": 0.0,
+          "citation_count": 3,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2506.11402",
+          "title": "LoRA Users Beware: A Few Spurious Tokens Can Manip",
+          "rrf_score": 0.0,
+          "citation_count": 1,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2401.09454",
+          "title": "Voila-A: Aligning Vision-Language Models with User",
+          "rrf_score": 0.0,
+          "citation_count": 37,
+          "retrieval_method": "abstract_supplement"
+        }
+      ]
+    },
+    {
+      "id": "Q004",
+      "question": "What methods for mitigating hallucination in LLMs were proposed in 2023, and how",
+      "type": "bridge",
+      "difficulty": "medium",
+      "required_papers": [
+        "2311.09114",
+        "2503.20201"
+      ],
+      "retrieved_papers": [
+        "2311.09114",
+        "2501.13121",
+        "2504.09354",
+        "2503.23687"
+      ],
+      "found": [
+        "2311.09114"
+      ],
+      "missed": [
+        "2503.20201"
+      ],
+      "recall": 0.5,
+      "hops": 2,
+      "top_results": [
+        {
+          "arxiv_id": "2311.09114",
+          "title": "Ever: Mitigating Hallucination in Large Language M",
+          "rrf_score": 0.0325,
+          "citation_count": 52,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2311.09114",
+          "title": "Ever: Mitigating Hallucination in Large Language M",
+          "rrf_score": 0.0318,
+          "citation_count": 52,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2501.13121",
+          "title": "Episodic Memories Generation and Evaluation Benchm",
+          "rrf_score": 0.0161,
+          "citation_count": 13,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2501.13121",
+          "title": "Episodic Memories Generation and Evaluation Benchm",
+          "rrf_score": 0.0156,
+          "citation_count": 13,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2504.09354",
+          "title": "REMEMBER: Retrieval-based Explainable Multimodal E",
+          "rrf_score": 0.0152,
+          "citation_count": 0,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2503.23687",
+          "title": "MKA: Leveraging Cross-Lingual Consensus for Model ",
+          "rrf_score": 0.0145,
+          "citation_count": 1,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2311.09114",
+          "title": "Ever: Mitigating Hallucination in Large Language M",
+          "rrf_score": 0.0,
+          "citation_count": 52,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2501.13121",
+          "title": "Episodic Memories Generation and Evaluation Benchm",
+          "rrf_score": 0.0,
+          "citation_count": 13,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2504.09354",
+          "title": "REMEMBER: Retrieval-based Explainable Multimodal E",
+          "rrf_score": 0.0,
+          "citation_count": 0,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2503.23687",
+          "title": "MKA: Leveraging Cross-Lingual Consensus for Model ",
+          "rrf_score": 0.0,
+          "citation_count": 1,
+          "retrieval_method": "abstract_supplement"
+        }
+      ]
+    },
+    {
+      "id": "Q005",
+      "question": "What are the trade-offs between memory efficiency and performance in KV-cache co",
+      "type": "comparison",
+      "difficulty": "medium",
+      "required_papers": [
+        "2503.11108",
+        "2401.09486"
+      ],
+      "retrieved_papers": [
+        "2503.01066",
+        "2404.05741",
+        "2503.11108",
+        "2401.09486",
+        "2403.04797",
+        "2503.20807"
+      ],
+      "found": [
+        "2503.11108",
+        "2401.09486"
+      ],
+      "missed": [],
+      "recall": 1.0,
+      "hops": 2,
+      "top_results": [
+        {
+          "arxiv_id": "2503.11108",
+          "title": "Time and Memory Trade-off of KV-Cache Compression ",
+          "rrf_score": 0.031,
+          "citation_count": 2,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2401.09486",
+          "title": "LoMA: Lossless Compressed Memory Attention",
+          "rrf_score": 0.031,
+          "citation_count": 9,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2401.09486",
+          "title": "LoMA: Lossless Compressed Memory Attention",
+          "rrf_score": 0.0164,
+          "citation_count": 9,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2503.11108",
+          "title": "Time and Memory Trade-off of KV-Cache Compression ",
+          "rrf_score": 0.0164,
+          "citation_count": 2,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2404.05741",
+          "title": "Enhancing Inference Efficiency of Large Language M",
+          "rrf_score": 0.0152,
+          "citation_count": 1,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2403.04797",
+          "title": "Found in the Middle: How Language Models Use Long ",
+          "rrf_score": 0.0147,
+          "citation_count": 80,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2503.20807",
+          "title": "Fundamental Safety-Capability Trade-offs in Fine-t",
+          "rrf_score": 0.0145,
+          "citation_count": 18,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2503.01066",
+          "title": "Alchemist: Towards the Design of Efficient Online ",
+          "rrf_score": 0.0143,
+          "citation_count": 1,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2503.01066",
+          "title": "Alchemist: Towards the Design of Efficient Online ",
+          "rrf_score": 0.0,
+          "citation_count": 1,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2404.05741",
+          "title": "Enhancing Inference Efficiency of Large Language M",
+          "rrf_score": 0.0,
+          "citation_count": 1,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2503.11108",
+          "title": "Time and Memory Trade-off of KV-Cache Compression ",
+          "rrf_score": 0.0,
+          "citation_count": 2,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2401.09486",
+          "title": "LoMA: Lossless Compressed Memory Attention",
+          "rrf_score": 0.0,
+          "citation_count": 9,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2403.04797",
+          "title": "Found in the Middle: How Language Models Use Long ",
+          "rrf_score": 0.0,
+          "citation_count": 80,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2503.20807",
+          "title": "Fundamental Safety-Capability Trade-offs in Fine-t",
+          "rrf_score": 0.0,
+          "citation_count": 18,
+          "retrieval_method": "abstract_supplement"
+        }
+      ]
+    },
+    {
+      "id": "Q006",
+      "question": "How have data augmentation techniques for NLP evolved from 2020 to 2024?",
+      "type": "aggregation",
+      "difficulty": "hard",
+      "required_papers": [
+        "2006.05477",
+        "2401.15422",
+        "2312.03743"
+      ],
+      "retrieved_papers": [
+        "2504.12523",
+        "2312.01279",
+        "2312.10528",
+        "2401.13085",
+        "2401.15422",
+        "2506.11402"
+      ],
+      "found": [
+        "2401.15422"
+      ],
+      "missed": [
+        "2006.05477",
+        "2312.03743"
+      ],
+      "recall": 0.3333333333333333,
+      "hops": 3,
+      "top_results": [
+        {
+          "arxiv_id": "2401.15422",
+          "title": "A Survey on Data Augmentation in Large Model Era",
+          "rrf_score": 0.0308,
+          "citation_count": 55,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2401.13085",
+          "title": "IndiText Boost: Text Augmentation for Low Resource",
+          "rrf_score": 0.0301,
+          "citation_count": 6,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2401.13085",
+          "title": "IndiText Boost: Text Augmentation for Low Resource",
+          "rrf_score": 0.0164,
+          "citation_count": 6,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2401.15422",
+          "title": "A Survey on Data Augmentation in Large Model Era",
+          "rrf_score": 0.0164,
+          "citation_count": 55,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2506.11402",
+          "title": "LoRA Users Beware: A Few Spurious Tokens Can Manip",
+          "rrf_score": 0.0161,
+          "citation_count": 1,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2504.12523",
+          "title": "Memorization vs. Reasoning: Updating LLMs with New",
+          "rrf_score": 0.0156,
+          "citation_count": 12,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2312.10528",
+          "title": "Cross-Linguistic Offensive Language Detection: BER",
+          "rrf_score": 0.0152,
+          "citation_count": 0,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2312.01279",
+          "title": "TextGenSHAP: Scalable Post-hoc Explanations in Tex",
+          "rrf_score": 0.0143,
+          "citation_count": 18,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2504.12523",
+          "title": "Memorization vs. Reasoning: Updating LLMs with New",
+          "rrf_score": 0.0,
+          "citation_count": 12,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2312.01279",
+          "title": "TextGenSHAP: Scalable Post-hoc Explanations in Tex",
+          "rrf_score": 0.0,
+          "citation_count": 18,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2312.10528",
+          "title": "Cross-Linguistic Offensive Language Detection: BER",
+          "rrf_score": 0.0,
+          "citation_count": 0,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2401.13085",
+          "title": "IndiText Boost: Text Augmentation for Low Resource",
+          "rrf_score": 0.0,
+          "citation_count": 6,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2401.15422",
+          "title": "A Survey on Data Augmentation in Large Model Era",
+          "rrf_score": 0.0,
+          "citation_count": 55,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2506.11402",
+          "title": "LoRA Users Beware: A Few Spurious Tokens Can Manip",
+          "rrf_score": 0.0,
+          "citation_count": 1,
+          "retrieval_method": "abstract_supplement"
+        }
+      ]
+    },
+    {
+      "id": "Q007",
+      "question": "How does the constitutional classifier approach defend against adversarial attac",
+      "type": "bridge",
+      "difficulty": "medium",
+      "required_papers": [
+        "2501.18837",
+        "2403.00888"
+      ],
+      "retrieved_papers": [
+        "2501.18837",
+        "2206.14272",
+        "2008.04203",
+        "2312.11572",
+        "2401.15422",
+        "2506.11402",
+        "2403.00888"
+      ],
+      "found": [
+        "2501.18837",
+        "2403.00888"
+      ],
+      "missed": [],
+      "recall": 1.0,
+      "hops": 2,
+      "top_results": [
+        {
+          "arxiv_id": "2501.18837",
+          "title": "Constitutional Classifiers: Defending against Univ",
+          "rrf_score": 0.0164,
+          "citation_count": 151,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2401.15422",
+          "title": "A Survey on Data Augmentation in Large Model Era",
+          "rrf_score": 0.0164,
+          "citation_count": 55,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2501.18837",
+          "title": "Constitutional Classifiers: Defending against Univ",
+          "rrf_score": 0.0161,
+          "citation_count": 151,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2008.04203",
+          "title": "FireBERT: Hardening BERT-based classifiers against",
+          "rrf_score": 0.0161,
+          "citation_count": 0,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2403.00888",
+          "title": "Margin Discrepancy-based Adversarial Training for ",
+          "rrf_score": 0.0159,
+          "citation_count": 2,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2008.04203",
+          "title": "FireBERT: Hardening BERT-based classifiers against",
+          "rrf_score": 0.0156,
+          "citation_count": 0,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2312.11572",
+          "title": "Regularized Conditional Alignment for Multi-Domain",
+          "rrf_score": 0.0154,
+          "citation_count": 2,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2403.00888",
+          "title": "Margin Discrepancy-based Adversarial Training for ",
+          "rrf_score": 0.0149,
+          "citation_count": 2,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2206.14272",
+          "title": "Collecting high-quality adversarial data for machi",
+          "rrf_score": 0.0147,
+          "citation_count": 0,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2506.11402",
+          "title": "LoRA Users Beware: A Few Spurious Tokens Can Manip",
+          "rrf_score": 0.0145,
+          "citation_count": 1,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2501.18837",
+          "title": "Constitutional Classifiers: Defending against Univ",
+          "rrf_score": 0.0,
+          "citation_count": 151,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2206.14272",
+          "title": "Collecting high-quality adversarial data for machi",
+          "rrf_score": 0.0,
+          "citation_count": 0,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2008.04203",
+          "title": "FireBERT: Hardening BERT-based classifiers against",
+          "rrf_score": 0.0,
+          "citation_count": 0,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2312.11572",
+          "title": "Regularized Conditional Alignment for Multi-Domain",
+          "rrf_score": 0.0,
+          "citation_count": 2,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2401.15422",
+          "title": "A Survey on Data Augmentation in Large Model Era",
+          "rrf_score": 0.0,
+          "citation_count": 55,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2506.11402",
+          "title": "LoRA Users Beware: A Few Spurious Tokens Can Manip",
+          "rrf_score": 0.0,
+          "citation_count": 1,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2403.00888",
+          "title": "Margin Discrepancy-based Adversarial Training for ",
+          "rrf_score": 0.0,
+          "citation_count": 2,
+          "retrieval_method": "abstract_supplement"
+        }
+      ]
+    },
+    {
+      "id": "Q008",
+      "question": "What approaches do papers from 2023-2024 take to improve LLM reasoning, and how ",
+      "type": "comparison",
+      "difficulty": "medium",
+      "required_papers": [
+        "2502.06781",
+        "2501.11284"
+      ],
+      "retrieved_papers": [
+        "2504.10646",
+        "2504.01902",
+        "2502.06781",
+        "2605.22723",
+        "2504.12951",
+        "2311.16173",
+        "2605.22658",
+        "2401.15422",
+        "2501.11284",
+        "2401.12168"
+      ],
+      "found": [
+        "2502.06781",
+        "2501.11284"
+      ],
+      "missed": [],
+      "recall": 1.0,
+      "hops": 2,
+      "top_results": [
+        {
+          "arxiv_id": "2504.12951",
+          "title": "Are Retrials All You Need? Enhancing Large Languag",
+          "rrf_score": 0.0308,
+          "citation_count": 1,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2401.12168",
+          "title": "SpatialVLM: Endowing Vision-Language Models with S",
+          "rrf_score": 0.0301,
+          "citation_count": 765,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2501.11284",
+          "title": "RedStar: Does Scaling Long-CoT Data Unlock Better ",
+          "rrf_score": 0.0301,
+          "citation_count": 44,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2504.10646",
+          "title": "Weight-of-Thought Reasoning: Exploring Neural Netw",
+          "rrf_score": 0.0164,
+          "citation_count": 1,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2502.06781",
+          "title": "Exploring the Limit of Outcome Reward for Learning",
+          "rrf_score": 0.0164,
+          "citation_count": 48,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2605.22723",
+          "title": "The Value of Covariance Matching in Gaussian DDPMs",
+          "rrf_score": 0.0161,
+          "citation_count": 0,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2401.15422",
+          "title": "A Survey on Data Augmentation in Large Model Era",
+          "rrf_score": 0.0159,
+          "citation_count": 55,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2504.01902",
+          "title": "Graphically Speaking: Unmasking Abuse in Social Me",
+          "rrf_score": 0.0159,
+          "citation_count": 2,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2311.16173",
+          "title": "Conditions for Length Generalization in Learning R",
+          "rrf_score": 0.0156,
+          "citation_count": 7,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2605.22658",
+          "title": "SegCompass: Exploring Interpretable Alignment with",
+          "rrf_score": 0.0154,
+          "citation_count": 0,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2504.10646",
+          "title": "Weight-of-Thought Reasoning: Exploring Neural Netw",
+          "rrf_score": 0.0,
+          "citation_count": 1,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2504.01902",
+          "title": "Graphically Speaking: Unmasking Abuse in Social Me",
+          "rrf_score": 0.0,
+          "citation_count": 2,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2502.06781",
+          "title": "Exploring the Limit of Outcome Reward for Learning",
+          "rrf_score": 0.0,
+          "citation_count": 48,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2605.22723",
+          "title": "The Value of Covariance Matching in Gaussian DDPMs",
+          "rrf_score": 0.0,
+          "citation_count": 0,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2504.12951",
+          "title": "Are Retrials All You Need? Enhancing Large Languag",
+          "rrf_score": 0.0,
+          "citation_count": 1,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2311.16173",
+          "title": "Conditions for Length Generalization in Learning R",
+          "rrf_score": 0.0,
+          "citation_count": 7,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2605.22658",
+          "title": "SegCompass: Exploring Interpretable Alignment with",
+          "rrf_score": 0.0,
+          "citation_count": 0,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2401.15422",
+          "title": "A Survey on Data Augmentation in Large Model Era",
+          "rrf_score": 0.0,
+          "citation_count": 55,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2501.11284",
+          "title": "RedStar: Does Scaling Long-CoT Data Unlock Better ",
+          "rrf_score": 0.0,
+          "citation_count": 44,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2401.12168",
+          "title": "SpatialVLM: Endowing Vision-Language Models with S",
+          "rrf_score": 0.0,
+          "citation_count": 765,
+          "retrieval_method": "abstract_supplement"
+        }
+      ]
+    },
+    {
+      "id": "Q009",
+      "question": "How do self-supervised pre-training methods for audio differ from those used for",
+      "type": "bridge",
+      "difficulty": "medium",
+      "required_papers": [
+        "2401.03497",
+        "2104.01027"
+      ],
+      "retrieved_papers": [
+        "2403.01841",
+        "2401.03497",
+        "2207.00112",
+        "2403.02938",
+        "2104.01027"
+      ],
+      "found": [
+        "2401.03497",
+        "2104.01027"
+      ],
+      "missed": [],
+      "recall": 1.0,
+      "hops": 2,
+      "top_results": [
+        {
+          "arxiv_id": "2401.03497",
+          "title": "EAT: Self-Supervised Pre-Training with Efficient A",
+          "rrf_score": 0.0323,
+          "citation_count": 94,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2401.03497",
+          "title": "EAT: Self-Supervised Pre-Training with Efficient A",
+          "rrf_score": 0.032,
+          "citation_count": 94,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2403.02938",
+          "title": "AIx Speed: Playback Speed Optimization Using Liste",
+          "rrf_score": 0.0301,
+          "citation_count": 1,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2104.01027",
+          "title": "Robust wav2vec 2.0: Analyzing Domain Shift in Self",
+          "rrf_score": 0.0164,
+          "citation_count": 270,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2104.01027",
+          "title": "Robust wav2vec 2.0: Analyzing Domain Shift in Self",
+          "rrf_score": 0.0159,
+          "citation_count": 270,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2207.00112",
+          "title": "Language model compression with weighted low-rank ",
+          "rrf_score": 0.0154,
+          "citation_count": 216,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2403.01841",
+          "title": "Making Pre-trained Language Models Great on Tabula",
+          "rrf_score": 0.0143,
+          "citation_count": 73,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2403.01841",
+          "title": "Making Pre-trained Language Models Great on Tabula",
+          "rrf_score": 0.0,
+          "citation_count": 73,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2401.03497",
+          "title": "EAT: Self-Supervised Pre-Training with Efficient A",
+          "rrf_score": 0.0,
+          "citation_count": 94,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2207.00112",
+          "title": "Language model compression with weighted low-rank ",
+          "rrf_score": 0.0,
+          "citation_count": 216,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2403.02938",
+          "title": "AIx Speed: Playback Speed Optimization Using Liste",
+          "rrf_score": 0.0,
+          "citation_count": 1,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2104.01027",
+          "title": "Robust wav2vec 2.0: Analyzing Domain Shift in Self",
+          "rrf_score": 0.0,
+          "citation_count": 270,
+          "retrieval_method": "abstract_supplement"
+        }
+      ]
+    },
+    {
+      "id": "Q010",
+      "question": "How do mixture of experts approaches compare to standard transformer architectur",
+      "type": "comparison",
+      "difficulty": "medium",
+      "required_papers": [
+        "2207.09094",
+        "2404.05741"
+      ],
+      "retrieved_papers": [
+        "2504.01902",
+        "2507.16577",
+        "2312.10528",
+        "2503.05005",
+        "2605.22779",
+        "2209.02535",
+        "2210.03766",
+        "2207.09094",
+        "2401.12181"
+      ],
+      "found": [
+        "2207.09094"
+      ],
+      "missed": [
+        "2404.05741"
+      ],
+      "recall": 0.5,
+      "hops": 2,
+      "top_results": [
+        {
+          "arxiv_id": "2605.22779",
+          "title": "FAME: Failure-Aware Mixture-of-Experts for Message",
+          "rrf_score": 0.0315,
+          "citation_count": 0,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2207.09094",
+          "title": "MoEC: Mixture of Expert Clusters",
+          "rrf_score": 0.0313,
+          "citation_count": 27,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2207.09094",
+          "title": "MoEC: Mixture of Expert Clusters",
+          "rrf_score": 0.0309,
+          "citation_count": 27,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2504.01902",
+          "title": "Graphically Speaking: Unmasking Abuse in Social Me",
+          "rrf_score": 0.0164,
+          "citation_count": 2,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2210.03766",
+          "title": "FedPC: Federated Learning for Language Generation ",
+          "rrf_score": 0.0159,
+          "citation_count": 0,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2507.16577",
+          "title": "Scaling Linear Attention with Sparse State Expansi",
+          "rrf_score": 0.0154,
+          "citation_count": 3,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2209.02535",
+          "title": "Analyzing Transformers in Embedding Space",
+          "rrf_score": 0.0152,
+          "citation_count": 138,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2312.10528",
+          "title": "Cross-Linguistic Offensive Language Detection: BER",
+          "rrf_score": 0.0149,
+          "citation_count": 0,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2401.12181",
+          "title": "Universal Neurons in GPT2 Language Models",
+          "rrf_score": 0.0147,
+          "citation_count": 93,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2503.05005",
+          "title": "Balcony: A Lightweight Approach to Dynamic Inferen",
+          "rrf_score": 0.0147,
+          "citation_count": 3,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2504.01902",
+          "title": "Graphically Speaking: Unmasking Abuse in Social Me",
+          "rrf_score": 0.0,
+          "citation_count": 2,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2507.16577",
+          "title": "Scaling Linear Attention with Sparse State Expansi",
+          "rrf_score": 0.0,
+          "citation_count": 3,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2312.10528",
+          "title": "Cross-Linguistic Offensive Language Detection: BER",
+          "rrf_score": 0.0,
+          "citation_count": 0,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2503.05005",
+          "title": "Balcony: A Lightweight Approach to Dynamic Inferen",
+          "rrf_score": 0.0,
+          "citation_count": 3,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2605.22779",
+          "title": "FAME: Failure-Aware Mixture-of-Experts for Message",
+          "rrf_score": 0.0,
+          "citation_count": 0,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2209.02535",
+          "title": "Analyzing Transformers in Embedding Space",
+          "rrf_score": 0.0,
+          "citation_count": 138,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2210.03766",
+          "title": "FedPC: Federated Learning for Language Generation ",
+          "rrf_score": 0.0,
+          "citation_count": 0,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2207.09094",
+          "title": "MoEC: Mixture of Expert Clusters",
+          "rrf_score": 0.0,
+          "citation_count": 27,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2401.12181",
+          "title": "Universal Neurons in GPT2 Language Models",
+          "rrf_score": 0.0,
+          "citation_count": 93,
+          "retrieval_method": "abstract_supplement"
+        }
+      ]
+    },
+    {
+      "id": "Q011",
+      "question": "What role does knowledge distillation play in making large language models more ",
+      "type": "bridge",
+      "difficulty": "hard",
+      "required_papers": [
+        "2401.17574",
+        "2504.11426",
+        "2312.04193"
+      ],
+      "retrieved_papers": [
+        "2401.12474",
+        "2510.01459",
+        "2210.03650",
+        "2504.11426",
+        "2005.14165",
+        "2401.17574",
+        "2207.04546",
+        "2404.05741",
+        "2312.04193"
+      ],
+      "found": [
+        "2401.17574",
+        "2312.04193",
+        "2504.11426"
+      ],
+      "missed": [],
+      "recall": 1.0,
+      "hops": 3,
+      "top_results": [
+        {
+          "arxiv_id": "2207.04546",
+          "title": "FairDistillation: Mitigating Stereotyping in Langu",
+          "rrf_score": 0.0308,
+          "citation_count": 14,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2401.17574",
+          "title": "Scavenging Hyena: Distilling Transformers into Lon",
+          "rrf_score": 0.0306,
+          "citation_count": 7,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2404.05741",
+          "title": "Enhancing Inference Efficiency of Large Language M",
+          "rrf_score": 0.0164,
+          "citation_count": 1,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2401.17574",
+          "title": "Scavenging Hyena: Distilling Transformers into Lon",
+          "rrf_score": 0.0164,
+          "citation_count": 7,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2504.11426",
+          "title": "A Dual-Space Framework for General Knowledge Disti",
+          "rrf_score": 0.0159,
+          "citation_count": 2,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2210.03650",
+          "title": "Longtonotes: OntoNotes with Longer Coreference Cha",
+          "rrf_score": 0.0159,
+          "citation_count": 6,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2005.14165",
+          "title": "Language Models are Few-Shot Learners",
+          "rrf_score": 0.0154,
+          "citation_count": 5824,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2510.01459",
+          "title": "LSPO: Length-aware Dynamic Sampling for Policy Opt",
+          "rrf_score": 0.0154,
+          "citation_count": 9,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2312.04193",
+          "title": "Language Model Knowledge Distillation for Efficien",
+          "rrf_score": 0.0149,
+          "citation_count": 1,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2401.12474",
+          "title": "Large Language Models are Superpositions of All Ch",
+          "rrf_score": 0.0149,
+          "citation_count": 127,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2401.12474",
+          "title": "Large Language Models are Superpositions of All Ch",
+          "rrf_score": 0.0,
+          "citation_count": 127,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2510.01459",
+          "title": "LSPO: Length-aware Dynamic Sampling for Policy Opt",
+          "rrf_score": 0.0,
+          "citation_count": 9,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2210.03650",
+          "title": "Longtonotes: OntoNotes with Longer Coreference Cha",
+          "rrf_score": 0.0,
+          "citation_count": 6,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2504.11426",
+          "title": "A Dual-Space Framework for General Knowledge Disti",
+          "rrf_score": 0.0,
+          "citation_count": 2,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2005.14165",
+          "title": "Language Models are Few-Shot Learners",
+          "rrf_score": 0.0,
+          "citation_count": 5824,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2401.17574",
+          "title": "Scavenging Hyena: Distilling Transformers into Lon",
+          "rrf_score": 0.0,
+          "citation_count": 7,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2207.04546",
+          "title": "FairDistillation: Mitigating Stereotyping in Langu",
+          "rrf_score": 0.0,
+          "citation_count": 14,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2404.05741",
+          "title": "Enhancing Inference Efficiency of Large Language M",
+          "rrf_score": 0.0,
+          "citation_count": 1,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2312.04193",
+          "title": "Language Model Knowledge Distillation for Efficien",
+          "rrf_score": 0.0,
+          "citation_count": 1,
+          "retrieval_method": "abstract_supplement"
+        }
+      ]
+    },
+    {
+      "id": "Q012",
+      "question": "How do different approaches to continual learning in NLP address catastrophic fo",
+      "type": "comparison",
+      "difficulty": "medium",
+      "required_papers": [
+        "2312.11441",
+        "2605.22743"
+      ],
+      "retrieved_papers": [
+        "2504.01902",
+        "2504.12523",
+        "2503.10664",
+        "2605.22743",
+        "2605.22731",
+        "2503.01066",
+        "2605.22769"
+      ],
+      "found": [
+        "2605.22743"
+      ],
+      "missed": [
+        "2312.11441"
+      ],
+      "recall": 0.5,
+      "hops": 2,
+      "top_results": [
+        {
+          "arxiv_id": "2503.01066",
+          "title": "Alchemist: Towards the Design of Efficient Online ",
+          "rrf_score": 0.0299,
+          "citation_count": 1,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2503.01066",
+          "title": "Alchemist: Towards the Design of Efficient Online ",
+          "rrf_score": 0.0164,
+          "citation_count": 1,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2605.22731",
+          "title": "Post-Training is About States, Not Tokens: A State",
+          "rrf_score": 0.0164,
+          "citation_count": 0,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2605.22769",
+          "title": "Understanding Data Temporality Impact on Large Lan",
+          "rrf_score": 0.0161,
+          "citation_count": 0,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2605.22743",
+          "title": "SeqLoRA: Bilevel Orthogonal Adaptation for Continu",
+          "rrf_score": 0.0161,
+          "citation_count": 0,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2605.22743",
+          "title": "SeqLoRA: Bilevel Orthogonal Adaptation for Continu",
+          "rrf_score": 0.0159,
+          "citation_count": 0,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2504.12523",
+          "title": "Memorization vs. Reasoning: Updating LLMs with New",
+          "rrf_score": 0.0154,
+          "citation_count": 12,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2504.01902",
+          "title": "Graphically Speaking: Unmasking Abuse in Social Me",
+          "rrf_score": 0.0154,
+          "citation_count": 2,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2504.12523",
+          "title": "Memorization vs. Reasoning: Updating LLMs with New",
+          "rrf_score": 0.0152,
+          "citation_count": 12,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2503.10664",
+          "title": "Semantic Wave Functions: Exploring Meaning in Larg",
+          "rrf_score": 0.0147,
+          "citation_count": 4,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2504.01902",
+          "title": "Graphically Speaking: Unmasking Abuse in Social Me",
+          "rrf_score": 0.0,
+          "citation_count": 2,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2504.12523",
+          "title": "Memorization vs. Reasoning: Updating LLMs with New",
+          "rrf_score": 0.0,
+          "citation_count": 12,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2503.10664",
+          "title": "Semantic Wave Functions: Exploring Meaning in Larg",
+          "rrf_score": 0.0,
+          "citation_count": 4,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2605.22743",
+          "title": "SeqLoRA: Bilevel Orthogonal Adaptation for Continu",
+          "rrf_score": 0.0,
+          "citation_count": 0,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2605.22731",
+          "title": "Post-Training is About States, Not Tokens: A State",
+          "rrf_score": 0.0,
+          "citation_count": 0,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2503.01066",
+          "title": "Alchemist: Towards the Design of Efficient Online ",
+          "rrf_score": 0.0,
+          "citation_count": 1,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2605.22769",
+          "title": "Understanding Data Temporality Impact on Large Lan",
+          "rrf_score": 0.0,
+          "citation_count": 0,
+          "retrieval_method": "abstract_supplement"
+        }
+      ]
+    },
+    {
+      "id": "Q013",
+      "question": "How has the evaluation of LLM creativity and open-ended generation quality been ",
+      "type": "bridge",
+      "difficulty": "medium",
+      "required_papers": [
+        "2312.03746",
+        "2008.03964"
+      ],
+      "retrieved_papers": [
+        "2312.03746",
+        "2501.13121",
+        "2504.13216",
+        "2504.02858",
+        "2403.04792",
+        "2310.11589",
+        "2605.22643",
+        "2501.11284"
+      ],
+      "found": [
+        "2312.03746"
+      ],
+      "missed": [
+        "2008.03964"
+      ],
+      "recall": 0.5,
+      "hops": 2,
+      "top_results": [
+        {
+          "arxiv_id": "2504.02858",
+          "title": "Optimizing Humor Generation in Large Language Mode",
+          "rrf_score": 0.0323,
+          "citation_count": 0,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2403.04792",
+          "title": "Breaking the Language Barrier: Can Direct Inferenc",
+          "rrf_score": 0.0311,
+          "citation_count": 21,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2504.13216",
+          "title": "KFinEval-Pilot: A Comprehensive Benchmark Suite fo",
+          "rrf_score": 0.0308,
+          "citation_count": 0,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2504.02858",
+          "title": "Optimizing Humor Generation in Large Language Mode",
+          "rrf_score": 0.0164,
+          "citation_count": 0,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2501.11284",
+          "title": "RedStar: Does Scaling Long-CoT Data Unlock Better ",
+          "rrf_score": 0.0159,
+          "citation_count": 44,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2312.03746",
+          "title": "Evaluating Large Language Model Creativity from a ",
+          "rrf_score": 0.0156,
+          "citation_count": 10,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2312.03746",
+          "title": "Evaluating Large Language Model Creativity from a ",
+          "rrf_score": 0.0156,
+          "citation_count": 10,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2310.11589",
+          "title": "Eliciting Human Preferences with Language Models",
+          "rrf_score": 0.0154,
+          "citation_count": 96,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2501.13121",
+          "title": "Episodic Memories Generation and Evaluation Benchm",
+          "rrf_score": 0.0152,
+          "citation_count": 13,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2605.22643",
+          "title": "Boiling the Frog: A Multi-Turn Benchmark for Agent",
+          "rrf_score": 0.0152,
+          "citation_count": 0,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2312.03746",
+          "title": "Evaluating Large Language Model Creativity from a ",
+          "rrf_score": 0.0,
+          "citation_count": 10,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2501.13121",
+          "title": "Episodic Memories Generation and Evaluation Benchm",
+          "rrf_score": 0.0,
+          "citation_count": 13,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2504.13216",
+          "title": "KFinEval-Pilot: A Comprehensive Benchmark Suite fo",
+          "rrf_score": 0.0,
+          "citation_count": 0,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2504.02858",
+          "title": "Optimizing Humor Generation in Large Language Mode",
+          "rrf_score": 0.0,
+          "citation_count": 0,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2403.04792",
+          "title": "Breaking the Language Barrier: Can Direct Inferenc",
+          "rrf_score": 0.0,
+          "citation_count": 21,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2310.11589",
+          "title": "Eliciting Human Preferences with Language Models",
+          "rrf_score": 0.0,
+          "citation_count": 96,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2605.22643",
+          "title": "Boiling the Frog: A Multi-Turn Benchmark for Agent",
+          "rrf_score": 0.0,
+          "citation_count": 0,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2501.11284",
+          "title": "RedStar: Does Scaling Long-CoT Data Unlock Better ",
+          "rrf_score": 0.0,
+          "citation_count": 44,
+          "retrieval_method": "abstract_supplement"
+        }
+      ]
+    },
+    {
+      "id": "Q014",
+      "question": "What are the main approaches to multilingual NLP and how do cross-lingual transf",
+      "type": "aggregation",
+      "difficulty": "hard",
+      "required_papers": [
+        "2501.13943",
+        "2310.11589",
+        "2403.04792"
+      ],
+      "retrieved_papers": [
+        "2311.13475",
+        "2312.10528",
+        "1910.10683",
+        "2503.23687",
+        "2605.22660",
+        "2311.08669",
+        "2207.01454"
+      ],
+      "found": [],
+      "missed": [
+        "2403.04792",
+        "2501.13943",
+        "2310.11589"
+      ],
+      "recall": 0.0,
+      "hops": 3,
+      "top_results": [
+        {
+          "arxiv_id": "2311.13475",
+          "title": "Machine Translation to Control Formality Features ",
+          "rrf_score": 0.0306,
+          "citation_count": 1,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "1910.10683",
+          "title": "Exploring the Limits of Transfer Learning with a U",
+          "rrf_score": 0.0164,
+          "citation_count": 2568,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2311.08669",
+          "title": "On the Calibration of Multilingual Question Answer",
+          "rrf_score": 0.0164,
+          "citation_count": 5,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "1910.10683",
+          "title": "Exploring the Limits of Transfer Learning with a U",
+          "rrf_score": 0.0161,
+          "citation_count": 2568,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2311.08669",
+          "title": "On the Calibration of Multilingual Question Answer",
+          "rrf_score": 0.0161,
+          "citation_count": 5,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2312.10528",
+          "title": "Cross-Linguistic Offensive Language Detection: BER",
+          "rrf_score": 0.0159,
+          "citation_count": 0,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2207.01454",
+          "title": "GlowVC: Mel-spectrogram space disentangling model ",
+          "rrf_score": 0.0156,
+          "citation_count": 6,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2605.22660",
+          "title": "Moral Semantics Survive Machine Translation: Cross",
+          "rrf_score": 0.0154,
+          "citation_count": 0,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2311.13475",
+          "title": "Machine Translation to Control Formality Features ",
+          "rrf_score": 0.0149,
+          "citation_count": 1,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2503.23687",
+          "title": "MKA: Leveraging Cross-Lingual Consensus for Model ",
+          "rrf_score": 0.0147,
+          "citation_count": 1,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2311.13475",
+          "title": "Machine Translation to Control Formality Features ",
+          "rrf_score": 0.0,
+          "citation_count": 1,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2312.10528",
+          "title": "Cross-Linguistic Offensive Language Detection: BER",
+          "rrf_score": 0.0,
+          "citation_count": 0,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "1910.10683",
+          "title": "Exploring the Limits of Transfer Learning with a U",
+          "rrf_score": 0.0,
+          "citation_count": 2568,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2503.23687",
+          "title": "MKA: Leveraging Cross-Lingual Consensus for Model ",
+          "rrf_score": 0.0,
+          "citation_count": 1,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2605.22660",
+          "title": "Moral Semantics Survive Machine Translation: Cross",
+          "rrf_score": 0.0,
+          "citation_count": 0,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2311.08669",
+          "title": "On the Calibration of Multilingual Question Answer",
+          "rrf_score": 0.0,
+          "citation_count": 5,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2207.01454",
+          "title": "GlowVC: Mel-spectrogram space disentangling model ",
+          "rrf_score": 0.0,
+          "citation_count": 6,
+          "retrieval_method": "abstract_supplement"
+        }
+      ]
+    },
+    {
+      "id": "Q015",
+      "question": "How do retrieval-based methods for LLM memory compare to parametric memory appro",
+      "type": "bridge",
+      "difficulty": "medium",
+      "required_papers": [
+        "2504.12523",
+        "2504.12951"
+      ],
+      "retrieved_papers": [
+        "2504.09354",
+        "2005.11401",
+        "2501.18824",
+        "2501.13121",
+        "2503.11108"
+      ],
+      "found": [],
+      "missed": [
+        "2504.12523",
+        "2504.12951"
+      ],
+      "recall": 0.0,
+      "hops": 2,
+      "top_results": [
+        {
+          "arxiv_id": "2501.13121",
+          "title": "Episodic Memories Generation and Evaluation Benchm",
+          "rrf_score": 0.0318,
+          "citation_count": 13,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2501.13121",
+          "title": "Episodic Memories Generation and Evaluation Benchm",
+          "rrf_score": 0.0311,
+          "citation_count": 13,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2005.11401",
+          "title": "Retrieval-Augmented Generation for Knowledge-Inten",
+          "rrf_score": 0.0303,
+          "citation_count": 1390,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2504.09354",
+          "title": "REMEMBER: Retrieval-based Explainable Multimodal E",
+          "rrf_score": 0.0156,
+          "citation_count": 0,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2503.11108",
+          "title": "Time and Memory Trade-off of KV-Cache Compression ",
+          "rrf_score": 0.0143,
+          "citation_count": 2,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2501.18824",
+          "title": "Memory-Efficient Fine-Tuning of Transformers via T",
+          "rrf_score": 0.0143,
+          "citation_count": 8,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2504.09354",
+          "title": "REMEMBER: Retrieval-based Explainable Multimodal E",
+          "rrf_score": 0.0,
+          "citation_count": 0,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2005.11401",
+          "title": "Retrieval-Augmented Generation for Knowledge-Inten",
+          "rrf_score": 0.0,
+          "citation_count": 1390,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2501.18824",
+          "title": "Memory-Efficient Fine-Tuning of Transformers via T",
+          "rrf_score": 0.0,
+          "citation_count": 8,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2501.13121",
+          "title": "Episodic Memories Generation and Evaluation Benchm",
+          "rrf_score": 0.0,
+          "citation_count": 13,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2503.11108",
+          "title": "Time and Memory Trade-off of KV-Cache Compression ",
+          "rrf_score": 0.0,
+          "citation_count": 2,
+          "retrieval_method": "abstract_supplement"
+        }
+      ]
+    },
+    {
+      "id": "Q016",
+      "question": "How do sparse and dense attention mechanisms differ in their approach to handlin",
+      "type": "comparison",
+      "difficulty": "medium",
+      "required_papers": [
+        "2507.16577",
+        "2401.09486"
+      ],
+      "retrieved_papers": [
+        "2507.16577",
+        "1508.04025",
+        "2312.01279",
+        "2005.14165",
+        "2401.17574",
+        "2404.05741",
+        "1904.10509",
+        "2401.09486",
+        "1706.03762"
+      ],
+      "found": [
+        "2507.16577",
+        "2401.09486"
+      ],
+      "missed": [],
+      "recall": 1.0,
+      "hops": 2,
+      "top_results": [
+        {
+          "arxiv_id": "2401.17574",
+          "title": "Scavenging Hyena: Distilling Transformers into Lon",
+          "rrf_score": 0.0323,
+          "citation_count": 7,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "1706.03762",
+          "title": "Attention Is All You Need",
+          "rrf_score": 0.0313,
+          "citation_count": 1772,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2312.01279",
+          "title": "TextGenSHAP: Scalable Post-hoc Explanations in Tex",
+          "rrf_score": 0.0301,
+          "citation_count": 18,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "1904.10509",
+          "title": "Generating Long Sequences with Sparse Transformers",
+          "rrf_score": 0.0164,
+          "citation_count": 2483,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2507.16577",
+          "title": "Scaling Linear Attention with Sparse State Expansi",
+          "rrf_score": 0.0161,
+          "citation_count": 3,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2404.05741",
+          "title": "Enhancing Inference Efficiency of Large Language M",
+          "rrf_score": 0.0161,
+          "citation_count": 1,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "1508.04025",
+          "title": "Effective Approaches to Attention-based Neural Mac",
+          "rrf_score": 0.0156,
+          "citation_count": 8380,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2005.14165",
+          "title": "Language Models are Few-Shot Learners",
+          "rrf_score": 0.0154,
+          "citation_count": 5824,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2401.09486",
+          "title": "LoMA: Lossless Compressed Memory Attention",
+          "rrf_score": 0.0152,
+          "citation_count": 9,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2401.09486",
+          "title": "LoMA: Lossless Compressed Memory Attention",
+          "rrf_score": 0.0152,
+          "citation_count": 9,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2507.16577",
+          "title": "Scaling Linear Attention with Sparse State Expansi",
+          "rrf_score": 0.0,
+          "citation_count": 3,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "1508.04025",
+          "title": "Effective Approaches to Attention-based Neural Mac",
+          "rrf_score": 0.0,
+          "citation_count": 8380,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2312.01279",
+          "title": "TextGenSHAP: Scalable Post-hoc Explanations in Tex",
+          "rrf_score": 0.0,
+          "citation_count": 18,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2005.14165",
+          "title": "Language Models are Few-Shot Learners",
+          "rrf_score": 0.0,
+          "citation_count": 5824,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2401.17574",
+          "title": "Scavenging Hyena: Distilling Transformers into Lon",
+          "rrf_score": 0.0,
+          "citation_count": 7,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2404.05741",
+          "title": "Enhancing Inference Efficiency of Large Language M",
+          "rrf_score": 0.0,
+          "citation_count": 1,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "1904.10509",
+          "title": "Generating Long Sequences with Sparse Transformers",
+          "rrf_score": 0.0,
+          "citation_count": 2483,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2401.09486",
+          "title": "LoMA: Lossless Compressed Memory Attention",
+          "rrf_score": 0.0,
+          "citation_count": 9,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "1706.03762",
+          "title": "Attention Is All You Need",
+          "rrf_score": 0.0,
+          "citation_count": 1772,
+          "retrieval_method": "abstract_supplement"
+        }
+      ]
+    },
+    {
+      "id": "Q017",
+      "question": "How did early work on transformer interpretability in 2021-2022 influence later ",
+      "type": "bridge",
+      "difficulty": "hard",
+      "required_papers": [
+        "2110.08412",
+        "2401.12181"
+      ],
+      "retrieved_papers": [
+        "2504.10646",
+        "2605.22719",
+        "2209.02535",
+        "2605.22658",
+        "2501.18838",
+        "2209.06275",
+        "2401.12181"
+      ],
+      "found": [
+        "2401.12181"
+      ],
+      "missed": [
+        "2110.08412"
+      ],
+      "recall": 0.5,
+      "hops": 2,
+      "top_results": [
+        {
+          "arxiv_id": "2209.02535",
+          "title": "Analyzing Transformers in Embedding Space",
+          "rrf_score": 0.0323,
+          "citation_count": 138,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2504.10646",
+          "title": "Weight-of-Thought Reasoning: Exploring Neural Netw",
+          "rrf_score": 0.0323,
+          "citation_count": 1,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2501.18838",
+          "title": "Partially Rewriting a Transformer in Natural Langu",
+          "rrf_score": 0.0309,
+          "citation_count": 1,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2209.02535",
+          "title": "Analyzing Transformers in Embedding Space",
+          "rrf_score": 0.0159,
+          "citation_count": 138,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2401.12181",
+          "title": "Universal Neurons in GPT2 Language Models",
+          "rrf_score": 0.0156,
+          "citation_count": 93,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2501.18838",
+          "title": "Partially Rewriting a Transformer in Natural Langu",
+          "rrf_score": 0.0154,
+          "citation_count": 1,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2605.22719",
+          "title": "Reading Task Failure Off the Activations: A Sparse",
+          "rrf_score": 0.0154,
+          "citation_count": 0,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2605.22658",
+          "title": "SegCompass: Exploring Interpretable Alignment with",
+          "rrf_score": 0.0152,
+          "citation_count": 0,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2401.12181",
+          "title": "Universal Neurons in GPT2 Language Models",
+          "rrf_score": 0.0149,
+          "citation_count": 93,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2209.06275",
+          "title": "PANCETTA: Phoneme Aware Neural Completion to Elici",
+          "rrf_score": 0.0149,
+          "citation_count": 6,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2504.10646",
+          "title": "Weight-of-Thought Reasoning: Exploring Neural Netw",
+          "rrf_score": 0.0,
+          "citation_count": 1,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2605.22719",
+          "title": "Reading Task Failure Off the Activations: A Sparse",
+          "rrf_score": 0.0,
+          "citation_count": 0,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2209.02535",
+          "title": "Analyzing Transformers in Embedding Space",
+          "rrf_score": 0.0,
+          "citation_count": 138,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2605.22658",
+          "title": "SegCompass: Exploring Interpretable Alignment with",
+          "rrf_score": 0.0,
+          "citation_count": 0,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2501.18838",
+          "title": "Partially Rewriting a Transformer in Natural Langu",
+          "rrf_score": 0.0,
+          "citation_count": 1,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2209.06275",
+          "title": "PANCETTA: Phoneme Aware Neural Completion to Elici",
+          "rrf_score": 0.0,
+          "citation_count": 6,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2401.12181",
+          "title": "Universal Neurons in GPT2 Language Models",
+          "rrf_score": 0.0,
+          "citation_count": 93,
+          "retrieval_method": "abstract_supplement"
+        }
+      ]
+    },
+    {
+      "id": "Q018",
+      "question": "What safety evaluation frameworks exist for agentic AI systems, and how do they ",
+      "type": "comparison",
+      "difficulty": "medium",
+      "required_papers": [
+        "2605.22643",
+        "2501.18837"
+      ],
+      "retrieved_papers": [
+        "2605.22643",
+        "2503.20807",
+        "2605.22719",
+        "2503.22610"
+      ],
+      "found": [
+        "2605.22643"
+      ],
+      "missed": [
+        "2501.18837"
+      ],
+      "recall": 0.5,
+      "hops": 2,
+      "top_results": [
+        {
+          "arxiv_id": "2605.22643",
+          "title": "Boiling the Frog: A Multi-Turn Benchmark for Agent",
+          "rrf_score": 0.0325,
+          "citation_count": 0,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2605.22643",
+          "title": "Boiling the Frog: A Multi-Turn Benchmark for Agent",
+          "rrf_score": 0.0315,
+          "citation_count": 0,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2503.22610",
+          "title": "Evaluating Multimodal Language Models as Visual As",
+          "rrf_score": 0.0154,
+          "citation_count": 4,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2503.20807",
+          "title": "Fundamental Safety-Capability Trade-offs in Fine-t",
+          "rrf_score": 0.0145,
+          "citation_count": 18,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2605.22719",
+          "title": "Reading Task Failure Off the Activations: A Sparse",
+          "rrf_score": 0.0143,
+          "citation_count": 0,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2605.22643",
+          "title": "Boiling the Frog: A Multi-Turn Benchmark for Agent",
+          "rrf_score": 0.0,
+          "citation_count": 0,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2503.20807",
+          "title": "Fundamental Safety-Capability Trade-offs in Fine-t",
+          "rrf_score": 0.0,
+          "citation_count": 18,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2605.22719",
+          "title": "Reading Task Failure Off the Activations: A Sparse",
+          "rrf_score": 0.0,
+          "citation_count": 0,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2503.22610",
+          "title": "Evaluating Multimodal Language Models as Visual As",
+          "rrf_score": 0.0,
+          "citation_count": 4,
+          "retrieval_method": "abstract_supplement"
+        }
+      ]
+    },
+    {
+      "id": "Q019",
+      "question": "How have code generation capabilities of LLMs evolved, and what role do agent-ba",
+      "type": "aggregation",
+      "difficulty": "medium",
+      "required_papers": [
+        "2401.14196",
+        "2508.00083"
+      ],
+      "retrieved_papers": [
+        "2508.00083"
+      ],
+      "found": [
+        "2508.00083"
+      ],
+      "missed": [
+        "2401.14196"
+      ],
+      "recall": 0.5,
+      "hops": 2,
+      "top_results": [
+        {
+          "arxiv_id": "2508.00083",
+          "title": "A Survey on Code Generation with LLM-based Agents",
+          "rrf_score": 0.0313,
+          "citation_count": 101,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2508.00083",
+          "title": "A Survey on Code Generation with LLM-based Agents",
+          "rrf_score": 0.0309,
+          "citation_count": 101,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2508.00083",
+          "title": "A Survey on Code Generation with LLM-based Agents",
+          "rrf_score": 0.0,
+          "citation_count": 101,
+          "retrieval_method": "abstract_supplement"
+        }
+      ]
+    },
+    {
+      "id": "Q020",
+      "question": "How do post-training alignment methods balance safety and capability, and what e",
+      "type": "bridge",
+      "difficulty": "medium",
+      "required_papers": [
+        "2510.01167",
+        "2503.20807"
+      ],
+      "retrieved_papers": [
+        "2501.08496",
+        "2510.00339",
+        "2510.01167",
+        "2503.20807"
+      ],
+      "found": [
+        "2503.20807",
+        "2510.01167"
+      ],
+      "missed": [],
+      "recall": 1.0,
+      "hops": 2,
+      "top_results": [
+        {
+          "arxiv_id": "2503.20807",
+          "title": "Fundamental Safety-Capability Trade-offs in Fine-t",
+          "rrf_score": 0.0323,
+          "citation_count": 18,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2503.20807",
+          "title": "Fundamental Safety-Capability Trade-offs in Fine-t",
+          "rrf_score": 0.0318,
+          "citation_count": 18,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2510.00339",
+          "title": "Navigating the Synchrony-Stability Frontier in Ada",
+          "rrf_score": 0.0147,
+          "citation_count": 0,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2501.08496",
+          "title": "Quantifying the Importance of Data Alignment in Do",
+          "rrf_score": 0.0145,
+          "citation_count": 2,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2510.01167",
+          "title": "Simultaneous Multi-objective Alignment Across Veri",
+          "rrf_score": 0.0143,
+          "citation_count": 4,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "arxiv_id": "2501.08496",
+          "title": "Quantifying the Importance of Data Alignment in Do",
+          "rrf_score": 0.0,
+          "citation_count": 2,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2510.00339",
+          "title": "Navigating the Synchrony-Stability Frontier in Ada",
+          "rrf_score": 0.0,
+          "citation_count": 0,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2510.01167",
+          "title": "Simultaneous Multi-objective Alignment Across Veri",
+          "rrf_score": 0.0,
+          "citation_count": 4,
+          "retrieval_method": "abstract_supplement"
+        },
+        {
+          "arxiv_id": "2503.20807",
+          "title": "Fundamental Safety-Capability Trade-offs in Fine-t",
+          "rrf_score": 0.0,
+          "citation_count": 18,
+          "retrieval_method": "abstract_supplement"
+        }
+      ]
+    }
+  ]
+}

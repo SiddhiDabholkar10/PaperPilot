@@ -1,0 +1,10 @@
+{
+  "total_questions": 20,
+  "zero_recall_cases": 2,
+  "low_recall_cases": 1,
+  "hints_breakdown": {
+    "rerank_or_topk_limit": 2,
+    "near_miss_expand_topk": 1
+  },
+  "csv_file": "C:\\Users\\dhrup\\OneDrive\\Desktop\\PaperPilot\\eval\\failure_analysis.csv"
+}

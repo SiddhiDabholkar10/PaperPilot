@@ -1,0 +1,1257 @@
+[
+  {
+    "id": "Q001",
+    "question": "How do failure-associated features identified in a sparse-feature audit of GPT-2 small on the indirect object identification task correspond to the n-gram heads that support in-context language learning, and how could rank-stabilized LoRA fine-tuning specifically target these features to improve task accuracy?",
+    "question_type": "bridge",
+    "difficulty": "hard",
+    "required_papers": [
+      "2605.22719",
+      "2312.03732",
+      "2401.12973"
+    ],
+    "reasoning": "Paper 1 identifies specific sparse autoencoder features that fire differently on failed versus successful IOI trials, providing a concrete failure mechanism. Paper 3 describes n-gram heads (higher-order induction heads) as a key architectural component for in-context language learning, which likely includes the IOI task. Bridging these allows hypothesizing that the failure features correspond to deficiencies in specific n-gram heads. Paper 2 introduces rsLoRA, a scaling method for low-rank adapters that improves fine-tuning performance with larger ranks. The question requires all three papers because it uses the feature-level diagnosis from paper 1, the interpretability concept from paper 3, and the fine-tuning technique from paper 2 to propose a targeted improvement strategy.",
+    "hops": 3
+  },
+  {
+    "id": "Q002",
+    "question": "How do the conditions for length generalization in reasoning tasks help explain GPT-2's failure patterns on Indirect Object Identification, and what evidence do sparse autoencoder features and n-gram heads provide for this mechanistic account?",
+    "question_type": "bridge",
+    "difficulty": "hard",
+    "required_papers": [
+      "2605.22719",
+      "2311.16173",
+      "2401.12973"
+    ],
+    "reasoning": "This question requires paper 2 ('Conditions for Length Generalization') to provide the theoretical conditions for length generalization; paper 1 ('Reading Task Failure Off the Activations') to supply the specific failure patterns and sparse-feature analysis of GPT-2 on IOI; and paper 3 ('In-Context Language Learning: Architectures and Algorithms') to contribute the concept of n-gram heads as a mechanism that may mediate success or failure in tasks like IOI. Together, they bridge from theoretical conditions to empirical failure analysis to a proposed mechanistic explanation.",
+    "hops": 3
+  },
+  {
+    "id": "Q003",
+    "question": "How can insights from sparse-autoencoder feature analysis of GPT-2's failures on the indirect object identification task inform the design of in-context learning mechanisms to mitigate contextual understanding errors in multimodal language models used as assistive technologies for visually impaired users?",
+    "question_type": "bridge",
+    "difficulty": "hard",
+    "required_papers": [
+      "2605.22719",
+      "2503.22610",
+      "2401.12973"
+    ],
+    "reasoning": "This question requires Paper 1 (2605.22719) for the sparse-feature audit of failure patterns in GPT-2, Paper 2 (2503.22610) for the specific contextual understanding failures identified in multimodal models used for visual assistance, and Paper 3 (2401.12973) for the in-context learning mechanisms (n-gram heads) that could be improved. The bridge traces how failure analysis (1) informs improvements in ICL (3) to address real-world assistive technology challenges (2).",
+    "hops": 3
+  },
+  {
+    "id": "Q004",
+    "question": "How can insights into the n-gram head mechanisms underlying in-context learning be used to interpret sparse-autoencoder feature audits of failure cases on the indirect object identification task, and how might these failure patterns inform the design of human feedback loops for few-shot classification models?",
+    "question_type": "bridge",
+    "difficulty": "hard",
+    "required_papers": [
+      "2605.22719",
+      "2401.09555",
+      "2401.12973"
+    ],
+    "reasoning": "The question requires Paper 1 (2605.22719) for the sparse-feature audit of IOI failures, Paper 2 (2401.09555) for human feedback loops to improve classification, and Paper 3 (2401.12973) for the n-gram head mechanism underlying in-context learning, thus bridging all three papers by tracing how mechanistic understanding can inform failure analysis and then active learning.",
+    "hops": 3
+  },
+  {
+    "id": "Q005",
+    "question": "How do the induction head mechanisms underlying in-context learning and the pre-training objectives explored in text-to-text transfer learning frameworks influence the feature-level failure patterns observed in GPT-2 small on the indirect object identification task, as diagnosed by sparse autoencoder audits?",
+    "question_type": "bridge",
+    "difficulty": "hard",
+    "required_papers": [
+      "2605.22719",
+      "1910.10683",
+      "2401.12973"
+    ],
+    "reasoning": "This question requires all three papers: the SAE audit paper (2605.22719) identifies features that fire differently on IOI failures; the ICL paper (2401.12973) explains the induction heads critical for IOI; the T5 paper (1910.10683) discusses pre-training objectives that shape learned representations and affect circuit behavior. To fully answer, one must synthesize how pre-training objectives influence induction head functionality and then interpret the sparse autoencoder feature analysis in that context.",
+    "hops": 3
+  },
+  {
+    "id": "Q006",
+    "question": "How do n-gram heads, which are specialized for in-context learning in transformers, contribute to the success or failure of the indirect object identification task in GPT-2 small, and how might this understanding inform the design of efficient Markov Transformers that use bounded context decoding?",
+    "question_type": "bridge",
+    "difficulty": "hard",
+    "required_papers": [
+      "2605.22719",
+      "2006.01112",
+      "2401.12973"
+    ],
+    "reasoning": "This question requires all three papers: (1) The IOI paper (2605.22719) provides the analysis of GPT-2 small's failure patterns and the specific SAE features involved. (2) The ICL paper (2401.12973) defines n-gram heads and explains their role in in-context learning and associative recall tasks like IOI. (3) The Markov Transformer paper (2006.01112) proposes an efficient decoding mechanism with bounded context, which directly relates to the n-gram-like behavior of these heads. Without any one paper, the chain from mechanistic understanding to architectural design cannot be completed.",
+    "hops": 3
+  },
+  {
+    "id": "Q007",
+    "question": "How do sparse autoencoder features from GPT-2 small's residual stream, which indicate task failure in Indirect Object Identification, relate to the 'n-gram heads' mechanism found essential for in-context learning in transformers, and how could mixture-of-experts routing constraints inspired by MoEC mitigate performance degradation from sparse feature activation?",
+    "question_type": "bridge",
+    "difficulty": "hard",
+    "required_papers": [
+      "2605.22719",
+      "2207.09094",
+      "2401.12973"
+    ],
+    "reasoning": "This question bridges three papers: (1) identifies specific SAE features in GPT-2 small that fire on IOI task failures, (2) shows transformers rely on n-gram heads for ICL, and (3) proposes MoEC with variance-based routing constraints to improve expert learning. The question requires all three because (a) the failure features from the audit suggest sparse activations may disrupt the n-gram head mechanism, (b) understanding those heads comes from the ICL paper, and (c) the MoEC routing constraints offer a potential way to reduce such disruptive sparse activations, forming a coherent chain from failure analysis to architectural remedy.",
+    "hops": 3
+  },
+  {
+    "id": "Q008",
+    "question": "How can insights from sparse-feature audits of model failures on the Indirect Object Identification task and the discovery of n-gram heads for in-context learning be leveraged to improve or explain the effectiveness of distillation-based debiasing methods in reducing stereotyping in language models?",
+    "question_type": "bridge",
+    "difficulty": "hard",
+    "required_papers": [
+      "2605.22719",
+      "2207.04546",
+      "2401.12973"
+    ],
+    "reasoning": "The question requires all three papers: (1) Paper 2605.22719 provides sparse-feature analysis of failure vs. success on IOI, (2) Paper 2207.04546 introduces distillation as a debiasing technique, and (3) Paper 2401.12973 characterizes n-gram heads as a mechanism for in-context learning. The bridge connects model-internal features and architectural mechanisms (papers 1 and 3) to the design or explanation of a specific debiasing method (paper 2).",
+    "hops": 3
+  },
+  {
+    "id": "Q009",
+    "question": "How do the sparse autoencoder features that indicate IOI failure in GPT-2 small relate to the n-gram heads that underlie in-context learning, and how might the pretraining optimizations in RoBERTa enhance the formation of these features?",
+    "question_type": "bridge",
+    "difficulty": "hard",
+    "required_papers": [
+      "2605.22719",
+      "1907.11692",
+      "2401.12973"
+    ],
+    "reasoning": "This question requires understanding of the sparse feature audit from the first paper to identify features linked to IOI failure, the concept of n-gram heads from the third paper that explain ICL mechanisms, and the pretraining improvements from RoBERTa (second paper) that could influence how such features develop during training. Without all three, the chain of influence from architecture design (RoBERTa) to mechanism discovery (n-gram heads) to failure analysis (SAE audit) cannot be fully traced.",
+    "hops": 3
+  },
+  {
+    "id": "Q010",
+    "question": "How does the tokenization of gender-diverse neopronouns, which induces misgendering failures, interfere with the in-context learning mechanisms involving n-gram heads, and how can this interference be detected through sparse feature analysis of GPT-2 small's failures on the Indirect Object Identification task?",
+    "question_type": "bridge",
+    "difficulty": "hard",
+    "required_papers": [
+      "2605.22719",
+      "2312.11779",
+      "2401.12973"
+    ],
+    "reasoning": "Paper 2 establishes that tokenization of neopronouns leads to grammar deficiencies and misgendering. Paper 3 identifies n-gram heads as a key mechanism for in-context learning in transformers. Paper 1 analyzes sparse-autoencoder features of GPT-2 small during successful vs. failed IOI trials. The question bridges these by asking how tokenization effects (paper 2) impair n-gram head-based ICL (paper 3), and how such impairments manifest as detectable feature differences in a specific task (paper 1).",
+    "hops": 3
+  },
+  {
+    "id": "Q011",
+    "question": "How do sparse feature audits of GPT-2's failures on the Indirect Object Identification task and the discovery of n-gram heads for in-context learning motivate the design of dynamic inference frameworks like Balcony?",
+    "question_type": "bridge",
+    "difficulty": "medium",
+    "required_papers": [
+      "2605.22719",
+      "2503.05005",
+      "2401.12973"
+    ],
+    "reasoning": "This bridge question requires all three papers: Paper 1 (2605.22719) provides the sparse feature analysis of GPT-2's failures on IOI, Paper 3 (2401.12973) introduces n-gram heads as a mechanism for in-context learning, and Paper 2 (2503.05005) presents Balcony, a dynamic inference method. The question connects the internal mechanism insights (features and n-gram heads) to the design motivation for dynamic inference, which is a chain of influence from understanding model internals to improving efficiency.",
+    "hops": 3
+  },
+  {
+    "id": "Q012",
+    "question": "How did insights from aspect-specific context modeling for PLMs contribute to the discovery of n-gram heads as a key mechanism for in-context learning, and how were these heads then leveraged in sparse-feature audits to explain failure in the IOI task?",
+    "question_type": "bridge",
+    "difficulty": "medium",
+    "required_papers": [
+      "2605.22719",
+      "2207.08099",
+      "2401.12973"
+    ],
+    "reasoning": "The question traces a chain of influence: Paper 2 introduces aspect-specific input transformations that focus PLM attention, which foreshadows the attention-based mechanisms (n-gram heads) studied in Paper 3. Paper 3 identifies n-gram heads as critical for in-context learning. Paper 1 then uses sparse-autoencoder feature audits on the IOI task, a specific instance of in-context learning, to reveal features that differ on failure, directly linking to the n-gram head mechanism. All three papers are required to fully answer: the context modeling technique (Paper 2), the discovered mechanism (Paper 3), and the failure audit (Paper 1).",
+    "hops": 3
+  },
+  {
+    "id": "Q013",
+    "question": "How could the sparse autoencoder features that fire differently on failed versus successful indirect object identification trials inform the design of linear probe calibration for in-context learning, given that n-gram heads are a key mechanism for ICL in transformers?",
+    "question_type": "bridge",
+    "difficulty": "hard",
+    "required_papers": [
+      "2605.22719",
+      "2401.12406",
+      "2401.12973"
+    ],
+    "reasoning": "This question requires all three papers: the first identifies specific SAE features associated with IOI task failures, the second proposes a calibration method to improve ICL performance, and the third explains n-gram heads as a mechanistic basis for ICL. The bridge connects how understanding feature-level failures could motivate calibration targets, and how the n-gram head mechanism might explain why calibration works or where it should be applied.",
+    "hops": 3
+  },
+  {
+    "id": "Q014",
+    "question": "How can the discovery of n-gram heads in in-context language learning inform the interpretation of sparse autoencoder features that differentiate successful and failed performance on the indirect object identification task, and how might this analysis extend to understanding the role of self-supervised learning features in generating speaking-style captions?",
+    "question_type": "bridge",
+    "difficulty": "hard",
+    "required_papers": [
+      "2311.16509",
+      "2401.12973",
+      "2605.22719"
+    ],
+    "reasoning": "This question traces a chain of influence: Paper 3 (2401.12973) identifies n-gram heads as the mechanism underlying in-context learning in transformers; Paper 1 (2605.22719) audits sparse autoencoder features for the IOI task\u2014a classic in-context learning test\u2014so understanding n-gram heads is essential to interpreting which features matter for success/failure; Paper 2 (2311.16509) uses self-supervised learning features for speaking-style captioning, and the mechanistic insights from Papers 3 and 1 could illuminate how such features contribute to caption generation. All three papers are required to connect the mechanism to an audit and then to a different domain.",
+    "hops": 3
+  },
+  {
+    "id": "Q015",
+    "question": "How does the sparse-feature audit of GPT-2 small on IOI task failures inform the design of cross-lingual consensus-based abstention mechanisms, and how might in-context learning architectures leverage such failure patterns to improve reliability?",
+    "question_type": "bridge",
+    "difficulty": "hard",
+    "required_papers": [
+      "2605.22719",
+      "2503.23687",
+      "2401.12973"
+    ],
+    "reasoning": "This question requires all three papers: Paper 1 (2605.22719) provides insights into specific SAE features that fire differently on failed vs. successful IOI trials, identifying failure patterns. Paper 2 (2503.23687) proposes a cross-lingual consensus method for abstention, which could be inspired by understanding when and why models fail. Paper 3 (2401.12973) discusses how in-context learning, particularly via specialized 'n-gram heads', enables novel function inference; understanding failure modes and abstention could inform how these architectures handle uncertainty. The bridge connects failure analysis (Paper 1) to abstention strategy (Paper 2) and architectural learning (Paper 3).",
+    "hops": 3
+  },
+  {
+    "id": "Q016",
+    "question": "How do the sparse features that distinguish successful and failed IOI trials in GPT-2 small (Paper 1) provide evidence for the existence of n-gram heads as a mechanism for in-context learning (Paper 3), and how does this mechanistic understanding support the self-alignment approach to role-play (Paper 2)?",
+    "question_type": "bridge",
+    "difficulty": "medium",
+    "required_papers": [
+      "2605.22719",
+      "2401.12474",
+      "2401.12973"
+    ],
+    "reasoning": "This question requires Paper 1 to identify the specific features associated with IOI task failures, Paper 3 to supply the theoretical framework of n-gram heads as an ICL mechanism that could explain those features, and Paper 2 to demonstrate how aligning such ICL-based capabilities enables role-play. All three are needed to trace the chain from mechanistic analysis to broader application in role-play alignment.",
+    "hops": 3
+  },
+  {
+    "id": "Q017",
+    "question": "How do sparse-feature failures in GPT-2 small on the IOI task, as identified in the audit, relate to the model's ability to form the 'n-gram heads' that support in-context learning, and how might these failures be mitigated by training on longer coreference chains that enforce more robust contextual binding?",
+    "question_type": "bridge",
+    "difficulty": "hard",
+    "required_papers": [
+      "2605.22719",
+      "2210.03650",
+      "2401.12973"
+    ],
+    "reasoning": "The question requires all three papers: (1) the audit of GPT-2 small's SAE features on IOI task failures to identify specific failure modes; (2) the paper on longer coreference chains to propose a training data enhancement that could improve contextual binding; and (3) the paper on in-context learning and 'n-gram heads' to explain the architectural mechanism that the failures and the proposed mitigation target. The bridge traces from identified feature failures to the underlying ICL mechanism, then to a data-based intervention.",
+    "hops": 3
+  },
+  {
+    "id": "Q018",
+    "question": "How can the sparse features that correlate with task failure in GPT-2 on the IOI task be explained by the n-gram head mechanisms of in-context learning, and how does this explanation inform the selection of unlearning examples in the Unlearning to Align (U2A) preference alignment framework?",
+    "question_type": "bridge",
+    "difficulty": "hard",
+    "required_papers": [
+      "2605.22719",
+      "2401.12973",
+      "2504.06659"
+    ],
+    "reasoning": "The question connects all three papers in a developmental chain: Paper 1 identifies specific SAE features associated with task failures on IOI, Paper 3 provides the mechanistic explanation of ICL via n-gram heads which could underlie those failures, and Paper 2 proposes an unlearning-based alignment framework (U2A) that could benefit from selecting unlearning examples based on such mechanistic understanding. Answering requires insights from each paper: the feature audit results, the n-gram head mechanism, and the unlearning selection strategy.",
+    "hops": 3
+  },
+  {
+    "id": "Q019",
+    "question": "How can insights from the n-gram head mechanism for in-context learning inform the sparse-feature audit of model failures on language tasks, and how might this auditing approach be applied to improve the semi-supervised detection of depression symptoms from social media text?",
+    "question_type": "bridge",
+    "difficulty": "hard",
+    "required_papers": [
+      "2605.22719",
+      "2209.02765",
+      "2401.12973"
+    ],
+    "reasoning": "Paper 3 introduces the n-gram head mechanism for in-context learning, which underlies performance on language tasks. Paper 1 uses sparse autoencoder features to audit failures on the Indirect Object Identification task, providing a method to diagnose where and why such mechanisms break. Paper 2 applies a semi-supervised framework for depression symptom detection, a domain where diagnostic reliability is critical. The question bridges from mechanistic understanding (Paper 3) to failure analysis (Paper 1) to a practical, high-stakes application (Paper 2), requiring all three to trace the full chain of influence.",
+    "hops": 3
+  },
+  {
+    "id": "Q020",
+    "question": "How does the sparse-feature analysis of GPT-2 small on the Indirect Object Identification task inform the design of scalable instructional feedback systems that measure specific talk moves, and how does this connection rely on the mechanistic understanding of in-context learning as implemented by specialized n-gram heads in transformers?",
+    "question_type": "bridge",
+    "difficulty": "hard",
+    "required_papers": [
+      "2605.22719",
+      "2311.10749",
+      "2401.12973"
+    ],
+    "reasoning": "This question requires all three papers: the first paper provides insights into sparse features and model failures on IOI tasks; the second paper uses fine-tuned models to measure instructional talk moves; the third paper explains how in-context learning works via n-gram heads. The bridge connects the mechanistic understanding of transformer behavior (paper 1 and 3) to the practical design of educational AI systems (paper 2), showing how feature-level analysis can improve the reliability of automated feedback tools.",
+    "hops": 3
+  },
+  {
+    "id": "Q021",
+    "question": "How do the n-gram heads (higher-order induction heads) identified in transformer-based in-context learning (Paper\u202f3) relate to the sparse autoencoder features that differ on successful vs failed IOI trials (Paper\u202f1), and can these insights be applied to improve attention mechanisms for entity linking in tabular data (Paper\u202f2)?",
+    "question_type": "bridge",
+    "difficulty": "medium",
+    "required_papers": [
+      "2605.22719",
+      "2207.01937",
+      "2401.12973"
+    ],
+    "reasoning": "This question traces a chain of influence: Paper\u202f3 introduces n-gram heads as a mechanism for in-context learning, Paper\u202f1 provides an empirical analysis of sparse features related to the IOI task (which relies on induction heads related to n-gram heads), and Paper\u202f2 proposes an attention-based entity linking model that could benefit from these mechanistic insights. All three papers are necessary to connect the theoretical mechanism, empirical validation, and practical application.",
+    "hops": 3
+  },
+  {
+    "id": "Q022",
+    "question": "How can sparse autoencoder feature analysis of transformer models on tasks like Indirect Object Identification help improve in-context language learning capabilities that are currently limited by the lack of labeled dialect data for Arabic NLP systems?",
+    "question_type": "bridge",
+    "difficulty": "hard",
+    "required_papers": [
+      "2605.22719",
+      "2102.11000",
+      "2401.12973"
+    ],
+    "reasoning": "This question connects findings from the sparse-feature audit of GPT-2 small on IOI tasks (2605.22719) to techniques for enhancing in-context learning in transformers (2401.12973), and finally applies those enhanced capabilities to address the data labeling challenge for Arabic dialects (2102.11000). The bridge goes from understanding model internals \u2192 improving learning algorithms \u2192 solving real-world low-resource problems.",
+    "hops": 3
+  },
+  {
+    "id": "Q023",
+    "question": "How does the sparse-feature audit of GPT-2 small's failure on the Indirect Object Identification task relate to the transformer's reliance on specialized n-gram heads for in-context learning, and how might automating tool generation from REST API documents benefit from understanding such internal mechanisms?",
+    "question_type": "bridge",
+    "difficulty": "hard",
+    "required_papers": [
+      "2605.22719",
+      "2501.16945",
+      "2401.12973"
+    ],
+    "reasoning": "This question requires all three papers: the first identifies specific SAE features associated with IOI task failure; the second discusses how transformers use n-gram heads for ICL, which may underpin the IOI mechanism; and the third proposes automating tool generation from APIs, which could be improved by understanding the model's internal failures and learning strategies.",
+    "hops": 3
+  },
+  {
+    "id": "Q024",
+    "question": "How do the sparse-autoencoder features that distinguish successful from failed trials in the indirect object identification task connect to the higher-order induction heads (n-gram heads) underlying in-context learning, and how do these mechanistic insights help explain the effectiveness of a single causal language model like GPT-2 when applied to task-oriented dialogue?",
+    "question_type": "bridge",
+    "difficulty": "hard",
+    "required_papers": [
+      "2605.22719",
+      "2401.12973",
+      "2005.00796"
+    ],
+    "reasoning": "This question requires the first paper for its analysis of features that differentiate success/failure on IOI (a task known to rely on induction heads), the second paper for its formal identification of n-gram heads as key to in-context learning, and the third paper as a concrete example of using a single causal LM (GPT-2) for dialogue, which benefits from these underlying mechanisms.",
+    "hops": 3
+  },
+  {
+    "id": "Q025",
+    "question": "How can the sparse autoencoder features identified in the audit of GPT-2 small's failures on the Indirect Object Identification task be related to the n-gram (induction) heads that underlie in-context learning, and how might Fisher-weighted low-rank factorization be applied to preserve such critical features during model compression?",
+    "question_type": "bridge",
+    "difficulty": "medium",
+    "required_papers": [
+      "2605.22719",
+      "2207.00112",
+      "2401.12973"
+    ],
+    "reasoning": "This question bridges three papers: Paper 1 (2605.22719) identifies sparse autoencoder features that fire differently on failed versus successful IOI trials, providing a feature-level analysis of model errors. Paper 3 (2401.12973) proposes that n-gram heads (higher-order induction heads) are crucial for in-context learning, a capability tested by the IOI task. Paper 2 (2207.00112) introduces Fisher-weighted SVD, a compression method that can weight parameters by importance. The question requires all three to trace the chain: which features matter (paper 1) \u2192 are these the n-gram heads (paper 3) \u2192 can we compress the model while preserving those heads (paper 2).",
+    "hops": 3
+  },
+  {
+    "id": "Q026",
+    "question": "How does the use of sparsity in SegCompass's sparse autoencoders for interpretable reasoning segmentation compare with its use in group-sparse matrix factorization for transfer learning of word embeddings, in terms of their objectives and the benefits they provide?",
+    "question_type": "comparison",
+    "difficulty": "medium",
+    "required_papers": [
+      "2605.22658",
+      "2104.08928"
+    ],
+    "reasoning": "The question requires both papers: SegCompass introduces sparse autoencoders to make reasoning segmentation interpretable, while the other paper uses a group-sparse penalty to transfer-learn word embeddings. Both rely on sparsity but for different purposes (interpretability vs. efficient domain adaptation), so comparing their approaches requires understanding each paper's method and objective.",
+    "hops": 2
+  },
+  {
+    "id": "Q027",
+    "question": "How does the approach of using sparse autoencoders for interpretable reasoning in segmentation (as explored in reasoning segmentation research) compare with the autonomy and task decomposition features of LLM-based code generation agents in terms of transparency and human oversight?",
+    "question_type": "comparison",
+    "difficulty": "hard",
+    "required_papers": [
+      "2605.22658",
+      "2508.00083"
+    ],
+    "reasoning": "This question requires both papers to compare: the first paper discusses interpretable alignment in segmentation using sparse autoencoders, focusing on transparency in visual reasoning. The second paper surveys LLM-based agents for code generation, emphasizing autonomy and task decomposition. The question contrasts these distinct domains on common dimensions of transparency and human oversight, needing insights from both to draw a meaningful comparison.",
+    "hops": 2
+  },
+  {
+    "id": "Q028",
+    "question": "How do the approaches to achieving interpretability in multimodal systems compare between using sparse autoencoders for vision-language reasoning and using a multi-agent LLM pipeline with acoustic models for emotional analysis?",
+    "question_type": "comparison",
+    "difficulty": "medium",
+    "required_papers": [
+      "2605.22658",
+      "2605.22732"
+    ],
+    "reasoning": "This question requires SegCompass (2605.22658) to explain the use of sparse autoencoders for interpretable alignment in reasoning segmentation, and the TRUST pipeline paper (2605.22732) to describe the multimodal LLM-based approach for pathos analysis. A direct comparison of these two distinct interpretability strategies cannot be answered using either paper alone.",
+    "hops": 2
+  },
+  {
+    "id": "Q029",
+    "question": "How does the approach of using sparse autoencoders for interpretable reasoning segmentation compare to knowledge distillation methods that treat student models as inherent denoisers of noisy teacher labels?",
+    "question_type": "comparison",
+    "difficulty": "hard",
+    "required_papers": [
+      "2605.22658",
+      "2312.10185"
+    ],
+    "reasoning": "This question requires comparing two distinct methodologies for improving model transparency and robustness: SegCompass uses sparse autoencoders to align reasoning with visual perception in a transparent way, while the knowledge distillation work shows that student models inherently denoise noisy teacher labels, offering a different path to robustness. Both papers must be understood to contrast their goals (interpretability vs. robustness) and mechanisms (explicit alignment vs. implicit denoising).",
+    "hops": 2
+  },
+  {
+    "id": "Q030",
+    "question": "How do the approaches in SegCompass and the GNN-based method differ in terms of interpretability and contextual reasoning, and what are the trade-offs between transparent alignment and structured conversational context?",
+    "question_type": "comparison",
+    "difficulty": "medium",
+    "required_papers": [
+      "2605.22658",
+      "2504.01902"
+    ],
+    "reasoning": "The question requires both papers because SegCompass focuses on interpretable alignment for reasoning segmentation, while the GNN-based method emphasizes contextual reasoning for abuse detection. Comparing them highlights trade-offs in interpretability, transparency, and reliance on structured context versus alignment mechanisms.",
+    "hops": 2
+  },
+  {
+    "id": "Q031",
+    "question": "How do the approaches to improving interpretability in vision-language reasoning (via sparse autoencoders) and data efficiency in end-to-end spoken language understanding (via Reptile) compare in terms of their underlying mechanisms and trade-offs?",
+    "question_type": "comparison",
+    "difficulty": "medium",
+    "required_papers": [
+      "2605.22658",
+      "2008.01994"
+    ],
+    "reasoning": "This question requires both papers because it contrasts two distinct methods\u2014sparse autoencoders for interpretable alignment in reasoning segmentation (SegCompass) and Reptile for few-shot generalization in speech-to-intent classification. Understanding the mechanisms and trade-offs of each approach necessitates reading their respective abstracts and full contexts.",
+    "hops": 2
+  },
+  {
+    "id": "Q032",
+    "question": "How do the methodological approaches of SegCompass and SDPM differ in terms of balancing transparency and flexibility within their respective tasks?",
+    "question_type": "comparison",
+    "difficulty": "hard",
+    "required_papers": [
+      "2605.22658",
+      "2605.22776"
+    ],
+    "reasoning": "SegCompass (paper 1) focuses on interpretability in reasoning segmentation via sparse autoencoders, contrasting with black-box methods, while SDPM (paper 2) prioritizes flexible continuous-time survival analysis using diffusion probabilistic models. Both papers address limitations in their fields (opacity vs. discretization), but their solutions are domain-specific. Answering requires comparing how each paper's design trades off transparency for modeling power or vice versa, necessitating understanding of both papers' methods and motivations.",
+    "hops": 2
+  },
+  {
+    "id": "Q033",
+    "question": "What are the trade-offs in model efficiency and task performance between employing a large unified text-to-text transformer (pre-trained on diverse tasks) and using a smaller distilled language model specifically fine-tuned for question answering in a single language?",
+    "question_type": "comparison",
+    "difficulty": "medium",
+    "required_papers": [
+      "1910.10683",
+      "2312.04193"
+    ],
+    "reasoning": "The question requires comparing two distinct approaches: the large-scale unified transfer learning framework from Paper 1 (T5) and the targeted knowledge distillation method for Spanish QA from Paper 2. Answering necessitates understanding T5's multi-task pre-training and benchmark results alongside the efficiency gains and performance retention of SpanishTinyRoBERTa, thus relying on both papers.",
+    "hops": 2
+  },
+  {
+    "id": "Q034",
+    "question": "How does the interpretability approach in SegCompass, which uses sparse autoencoders for transparent reasoning segmentation, compare with the efficiency-driven design of Alchemist's online continual learning system that reuses serving activations to improve training throughput?",
+    "question_type": "comparison",
+    "difficulty": "hard",
+    "required_papers": [
+      "2605.22658",
+      "2503.01066"
+    ],
+    "reasoning": "This question requires both papers because SegCompass focuses on interpretable alignment between reasoning and vision, while Alchemist focuses on computational efficiency through activation reuse. A meaningful comparison between their design philosophies, goals, and techniques can only be made by analyzing both approaches.",
+    "hops": 2
+  },
+  {
+    "id": "Q035",
+    "question": "How do the approaches to interpretable reasoning in SegCompass (vision segmentation) and CHARD (clinical text generation) differ in their treatment of transparency, and what trade-offs exist between their respective design choices?",
+    "question_type": "comparison",
+    "difficulty": "medium",
+    "required_papers": [
+      "2605.22658",
+      "2210.04191"
+    ],
+    "reasoning": "This question requires both papers because it explicitly contrasts the methods for achieving interpretable reasoning in two distinct domains: SegCompass focuses on making visual reasoning segmentation interpretable via sparse autoencoders, while CHARD investigates the transparency of clinical text generation models. Answering requires understanding the unique challenges and design choices in each paper, and then comparing them.",
+    "hops": 2
+  },
+  {
+    "id": "Q036",
+    "question": "What are the trade-offs in model design and evaluation as highlighted by the interpretable alignment approach in SegCompass versus the human-centric keystroke savings metric for patent language models?",
+    "question_type": "comparison",
+    "difficulty": "medium",
+    "required_papers": [
+      "2605.22658",
+      "2206.14578"
+    ],
+    "reasoning": "This comparison question requires understanding both papers: SegCompass proposes an interpretable method using sparse autoencoders to replace black-box alignment, while the patent language model paper introduces a human-centric evaluation metric that challenges the assumption that larger models are better. The question forces a direct comparison of their respective approaches to challenging conventional model scaling or complexity assumptions and the trade-offs involved (interpretability vs. black-box performance, and keystroke savings vs. model size).",
+    "hops": 2
+  },
+  {
+    "id": "Q037",
+    "question": "What are the trade-offs between the interpretable alignment approach for reasoning segmentation and the method of scaling long chain-of-thought data for slow-thinking models?",
+    "question_type": "comparison",
+    "difficulty": "medium",
+    "required_papers": [
+      "2605.22658",
+      "2501.11284"
+    ],
+    "reasoning": "This comparison question requires understanding both papers: SegCompass proposes interpretable alignment using sparse autoencoders for reasoning segmentation, while RedStar explores scaling long CoT data to enhance reasoning. To fully compare the trade-offs (e.g., interpretability vs. performance gains, domain specificity vs. generality), one must analyze the distinct methodologies and findings from both papers.",
+    "hops": 2
+  },
+  {
+    "id": "Q038",
+    "question": "How does the systematic study of transfer learning techniques in NLP compare with the unexpected misalignment between response and reasoning observed in LLMs applied to medical term classification?",
+    "question_type": "comparison",
+    "difficulty": "hard",
+    "required_papers": [
+      "1910.10683",
+      "2312.14184"
+    ],
+    "reasoning": "This question requires both papers to answer: the first provides a broad overview of transfer learning techniques and their effectiveness across NLP tasks, while the second presents a specific application in medical diagnostics where misalignment between model responses and reasoning occurs. Comparing these highlights the gap between general transfer learning successes and domain-specific challenges in clinical coherence.",
+    "hops": 2
+  },
+  {
+    "id": "Q039",
+    "question": "How do the goals and methodologies of SegCompass's interpretable alignment via sparse autoencoders for reasoning segmentation contrast with T5's unified text-to-text transfer learning approach, and what are the trade-offs between interpretability and generalizable performance in these two distinct frameworks?",
+    "question_type": "comparison",
+    "difficulty": "medium",
+    "required_papers": [
+      "2605.22658",
+      "1910.10683"
+    ],
+    "reasoning": "This question requires SegCompass to explain its interpretable alignment and sparse autoencoder approach for reasoning segmentation, and T5 to explain its systematic study of transfer learning with a unified text-to-text framework. Comparing these two papers reveals trade-offs between targeted interpretability in vision-language tasks and broad transfer learning effectiveness in NLP, which cannot be answered without both perspectives.",
+    "hops": 2
+  },
+  {
+    "id": "Q040",
+    "question": "How do the interpretability approaches in SegCompass and the LLM-assisted depression screening method differ in terms of transparency and reliance on annotated data?",
+    "question_type": "comparison",
+    "difficulty": "medium",
+    "required_papers": [
+      "2605.22658",
+      "2501.17510"
+    ],
+    "reasoning": "This question requires both papers: SegCompass discusses interpretable alignment using sparse autoencoders for reasoning segmentation, while the depression screening paper uses LLM-assisted symptom annotations as features. Comparing their approaches to interpretability and data annotation needs necessitates understanding the methods and goals presented in both abstracts.",
+    "hops": 2
+  },
+  {
+    "id": "Q041",
+    "question": "What are the trade-offs between using sparse autoencoders for interpretable alignment in reasoning segmentation and using knowledge distillation to transfer transformer capabilities to efficient long convolution models?",
+    "question_type": "comparison",
+    "difficulty": "medium",
+    "required_papers": [
+      "2605.22658",
+      "2401.17574"
+    ],
+    "reasoning": "This comparison requires understanding both papers: the first proposes sparse autoencoders for improving interpretability in vision-language reasoning segmentation, while the second uses knowledge distillation to create efficient long convolution models by transferring capabilities from transformers. Answering requires contrasting their different goals (interpretability vs. efficiency) and methods (sparse autoencoding vs. cross-architecture distillation).",
+    "hops": 2
+  },
+  {
+    "id": "Q042",
+    "question": "How do the transfer learning methodologies of the T5 text-to-text transformer and the XLS-R speech model differ in their ability to handle low-resource languages, and what trade-offs exist between their approaches in terms of data requirements and task performance?",
+    "question_type": "comparison",
+    "difficulty": "medium",
+    "required_papers": [
+      "1910.10683",
+      "2401.06832"
+    ],
+    "reasoning": "Answering this question requires understanding T5's unified text-to-text transfer learning framework from the first paper and the XLS-R 300m model's multilingual ASR approach and its performance on low-resource languages (Indonesian, Javanese, Sundanese) from the second paper. The comparison contrasts the two paradigms (text-to-text vs. self-supervised speech representation), their data needs, and performance outcomes, thus necessitating both papers.",
+    "hops": 2
+  },
+  {
+    "id": "Q043",
+    "question": "How do direct inference methods that bypass intermediate translation or alignment steps compare to traditional pipeline approaches in terms of both performance and interpretability, and what are the trade-offs observed in multimodal reasoning versus multilingual language tasks?",
+    "question_type": "comparison",
+    "difficulty": "hard",
+    "required_papers": [
+      "2605.22658",
+      "2403.04792"
+    ],
+    "reasoning": "This question requires both papers because it asks to contrast the direct inference approach (Paper 2: PaLM2-L outperforming pre-translation) with the interpretable alignment approach (Paper 1: using sparse autoencoders for transparent reasoning segmentation) against their respective traditional black-box or pipeline methods. The comparison spans different domains (multilingual LLM inference vs. multimodal reasoning segmentation) and requires understanding the specific advantages and trade-offs (e.g., performance vs. interpretability) reported in each paper to answer fully.",
+    "hops": 2
+  },
+  {
+    "id": "Q044",
+    "question": "How do the trade-offs differ between using sparse autoencoders for interpretable alignment (as in SegCompass) versus exploiting attention layer redundancy for model compression, when applied to large language models performing reasoning tasks?",
+    "question_type": "comparison",
+    "difficulty": "medium",
+    "required_papers": [
+      "2605.22658",
+      "2404.05741"
+    ],
+    "reasoning": "The question requires the first paper (SegCompass) to explain the interpretable alignment approach using sparse autoencoders for reasoning segmentation, and the second paper to describe the method of skipping latter attention sublayers for compression. A comparison of these two distinct strategies\u2014one enhancing interpretability and the other improving inference efficiency\u2014necessitates understanding both papers to assess their respective benefits and drawbacks in LLM-based reasoning systems.",
+    "hops": 2
+  },
+  {
+    "id": "Q045",
+    "question": "How does the approach to ensuring faithfulness in data-to-text generation by clustering predicates compare to the use of sparse autoencoders for achieving interpretable alignment between reasoning and visual perception, particularly in terms of transparency and handling of unstructured combinations?",
+    "question_type": "comparison",
+    "difficulty": "hard",
+    "required_papers": [
+      "2605.22658",
+      "2312.02748"
+    ],
+    "reasoning": "The question requires both papers: '2312.02748' proposes clustering predicates to improve compositional generalization and faithfulness in structured data-to-text generation, while '2605.22658' introduces sparse autoencoders to make reasoning segmentation more interpretable. Comparing these approaches involves contrasting their mechanisms for ensuring output quality (faithfulness vs. transparency) and their handling of novel combinations (unseen predicate combinations vs. alignment decomposition). A full answer needs analysis of both methods' strengths, weaknesses, and underlying principles.",
+    "hops": 2
+  },
+  {
+    "id": "Q046",
+    "question": "How do the approaches to interpretable representation learning in SegCompass (for reasoning segmentation) and the unsupervised document representation method (for aspect-based sentiment analysis) compare in their treatment of the trade-off between end-to-end performance and transparency?",
+    "question_type": "comparison",
+    "difficulty": "hard",
+    "required_papers": [
+      "2605.22658",
+      "2401.06210"
+    ],
+    "reasoning": "This question requires understanding of both papers: SegCompass proposes a method using sparse autoencoders for interpretable alignment in vision-language segmentation, explicitly critiquing opaque end-to-end methods and post-hoc interpretability. The second paper presents an unsupervised document representation model for fine-grained sentiment analysis, achieving state-of-the-art results while claiming better semantic understanding. Comparing them forces a discussion of how each balances performance with interpretability in different domains (visual vs. textual), which is not derivable from either paper alone.",
+    "hops": 2
+  },
+  {
+    "id": "Q047",
+    "question": "How do the limitations of large language models in providing transparent reasoning (as highlighted in the reasoning segmentation context) compare to their limitations in performing fine-grained linguistic annotation tasks?",
+    "question_type": "comparison",
+    "difficulty": "medium",
+    "required_papers": [
+      "2605.22658",
+      "2503.19260"
+    ],
+    "reasoning": "This question requires Paper 1 to understand the opacity of reasoning segmentation and the proposed solution for interpretable alignment, and Paper 2 to understand the specific linguistic blind spots in LLMs. A full comparison of these two types of limitations\u2014one in vision-language reasoning transparency and the other in syntactic annotation accuracy\u2014can only be made by drawing on the findings from both papers.",
+    "hops": 2
+  },
+  {
+    "id": "Q048",
+    "question": "How do the approaches to incorporating interpretable structural information differ between the sparse autoencoder alignment method used in reasoning segmentation and the morphological skip-gram method for word embeddings?",
+    "question_type": "comparison",
+    "difficulty": "hard",
+    "required_papers": [
+      "2605.22658",
+      "2007.10055"
+    ],
+    "reasoning": "This question requires both papers because it asks to compare the interpretability mechanisms from two distinct domains: the first paper introduces sparse autoencoders to align reasoning with visual perception in a transparent way, while the second paper uses morphological analysis (morphemes) to enrich word representations. The answer must draw on details from both abstracts to contrast how each method introduces structure (sparse features vs. morphemes) for interpretability.",
+    "hops": 2
+  },
+  {
+    "id": "Q049",
+    "question": "How do SegCompass and TP-BERTa differ in their core strategies for adapting pre-trained language models to non-textual domains\u2014specifically, one focusing on interpretable alignment with sparse autoencoders for reasoning segmentation, and the other on specialized pre-training for tabular data prediction?",
+    "question_type": "comparison",
+    "difficulty": "medium",
+    "required_papers": [
+      "2605.22658",
+      "2403.01841"
+    ],
+    "reasoning": "This question requires both papers because it contrasts the distinct approaches taken by SegCompass (using sparse autoencoders for interpretable vision-language alignment) and TP-BERTa (employing a tailored pre-training strategy for tabular data). Answering the question necessitates understanding the methodological details from each paper to compare their adaptations of pre-trained language models.",
+    "hops": 2
+  },
+  {
+    "id": "Q050",
+    "question": "How does the interpretability of the SegCompass reasoning segmentation pipeline compare with the black-box nature of standard code intelligence models like DeepSeek-Coder, and what trade-offs exist between transparency and performance in these two approaches?",
+    "question_type": "comparison",
+    "difficulty": "medium",
+    "required_papers": [
+      "2605.22658",
+      "2401.14196"
+    ],
+    "reasoning": "This question requires both papers: SegCompass provides an interpretable approach to reasoning segmentation using sparse autoencoders, while DeepSeek-Coder represents a high-performance but opaque code model. The comparison highlights the trade-off between interpretability and performance, which can only be fully explored by understanding both papers' methodologies and results.",
+    "hops": 2
+  },
+  {
+    "id": "Q051",
+    "question": "What distinct methodological approaches have been used in recent research to analyze or generate specific linguistic challenges in language models, including syntactic structure, phonetic difficulty, and in-context learning? Describe the techniques and the linguistic phenomena targeted in each case.",
+    "question_type": "aggregation",
+    "difficulty": "medium",
+    "required_papers": [
+      "2605.22719",
+      "2209.06275",
+      "2401.12973"
+    ],
+    "reasoning": "The question requires all three papers to provide complete examples: the first paper contributes a sparse autoencoder audit of GPT-2 small for indirect object identification failures; the second describes the PANCETTA system for generating phonetically difficult tongue twisters; the third investigates in-context language learning in transformers with n-gram heads. Each paper presents a distinct technique and targets a different linguistic phenomenon, so all are needed to fully answer the aggregation request.",
+    "hops": 3
+  },
+  {
+    "id": "Q052",
+    "question": "What factors have been found to affect language model performance on specific tasks, and what methods were used to identify them?",
+    "question_type": "aggregation",
+    "difficulty": "medium",
+    "required_papers": [
+      "2605.22719",
+      "2501.08496",
+      "2401.12973"
+    ],
+    "reasoning": "This question requires all three papers because each presents a distinct factor influencing language model performance and the method used to uncover it: Paper 1 identifies sparse autoencoder features associated with task failure on IOI; Paper 2 introduces a data alignment coefficient that predicts downstream performance; Paper 3 discovers specialized 'n-gram heads' as architectural components enabling in-context learning. A complete answer must draw examples from all three papers.",
+    "hops": 3
+  },
+  {
+    "id": "Q053",
+    "question": "What recent methods have been proposed for analyzing the internal representations and mechanisms of language models, specifically for understanding task failures, disentangling multimodal concepts, and explaining in-context learning?",
+    "question_type": "aggregation",
+    "difficulty": "medium",
+    "required_papers": [
+      "2605.22719",
+      "2605.22679",
+      "2401.12973"
+    ],
+    "reasoning": "Paper [2605.22719] uses sparse autoencoder features to audit GPT-2 Small's failures on the IOI task, Paper [2605.22679] proposes CEDAR for sparse disentanglement of vision-language embeddings, and Paper [2401.12973] identifies specialized n-gram heads (higher-order induction heads) that enable in-context language learning. Together, these three papers cover distinct interpretability approaches (task failure analysis, embedding disentanglement, and mechanistic explanation of ICL), and a complete answer requires synthesizing examples from all three.",
+    "hops": 3
+  },
+  {
+    "id": "Q054",
+    "question": "What distinct methods have recent studies proposed to investigate or enhance language model behavior, including analysis of internal feature failures, safety classifiers, and in-context learning mechanisms?",
+    "question_type": "aggregation",
+    "difficulty": "medium",
+    "required_papers": [
+      "2605.22719",
+      "2501.18837",
+      "2401.12973"
+    ],
+    "reasoning": "This aggregation question requires all three papers to provide a complete answer: Paper 2605.22719 contributes a method using sparse autoencoder features to audit task failures (e.g., IOI), Paper 2501.18837 introduces Constitutional Classifiers as a safety method against jailbreaks, and Paper 2401.12973 explores mechanisms (n-gram heads) for in-context learning. Each paper presents a distinct approach to understanding or improving LLMs, and the question explicitly collects examples across all three works.",
+    "hops": 3
+  },
+  {
+    "id": "Q055",
+    "question": "What are the different methods or approaches used to analyze or improve the performance of large language models on specific tasks, as demonstrated across various research studies?",
+    "question_type": "aggregation",
+    "difficulty": "medium",
+    "required_papers": [
+      "2605.22719",
+      "2312.02296",
+      "2401.12973"
+    ],
+    "reasoning": "This aggregation question requires all three papers because each presents a distinct method for studying or enhancing LLM performance: the first uses sparse autoencoder features to audit task failures, the second combines LLMs with human expertise for efficient annotation, and the third investigates architectures and algorithms for in-context learning. A complete answer would need to collect and describe all three approaches.",
+    "hops": 3
+  },
+  {
+    "id": "Q056",
+    "question": "What specific mechanisms (e.g., sparse features, n-gram heads) and theoretical frameworks (e.g., safety-capability trade-off) have been proposed to explain the behavior and limitations of transformer language models on tasks like indirect object identification and in-context learning?",
+    "question_type": "aggregation",
+    "difficulty": "medium",
+    "required_papers": [
+      "2605.22719",
+      "2503.20807",
+      "2401.12973"
+    ],
+    "reasoning": "To fully answer this question, one must draw on all three papers: the first identifies SAE features associated with IOI failure in GPT-2 small, the second provides a theoretical framework for safety-capability trade-offs during fine-tuning, and the third describes n-gram heads as a mechanism for in-context learning. Together, they offer a multi-faceted view of mechanisms and trade-offs in transformer LMs.",
+    "hops": 3
+  },
+  {
+    "id": "Q057",
+    "question": "What architectural modifications and analytical methods have been used to understand and improve transformer performance on long-range dependency tasks?",
+    "question_type": "aggregation",
+    "difficulty": "medium",
+    "required_papers": [
+      "2605.22719",
+      "1901.02860",
+      "2401.12973"
+    ],
+    "reasoning": "This question requires all three papers to provide a complete answer: the Transformer-XL paper proposes a segment-level recurrence mechanism for extending context beyond fixed length; the in-context learning paper identifies specialized 'n-gram heads' as algorithmic components enabling transformers to learn from context; the sparse-feature audit paper presents a method (SAE feature analysis) to diagnose failures on a long-range dependency task (IOI), providing insight into when and why transformers falter. Without any one of these, the aggregation of architectural modifications and analytical methods would be incomplete.",
+    "hops": 3
+  },
+  {
+    "id": "Q058",
+    "question": "What specific mechanisms or training strategies have been identified as important for language models' performance on tasks such as indirect object identification, in-context learning, and depression symptom detection?",
+    "question_type": "aggregation",
+    "difficulty": "medium",
+    "required_papers": [
+      "2605.22719",
+      "2209.02765",
+      "2401.12973"
+    ],
+    "reasoning": "This question requires all three papers to provide distinct examples: Paper 1 identifies sparse-autoencoder features that differ on failed vs successful indirect object identification trials; Paper 2 proposes a semi-supervised learning framework for depression symptom detection; Paper 3 discovers n-gram heads as a mechanism enabling transformers to perform in-context learning. Each paper contributes a unique type of finding, and together they illustrate diverse approaches to analyzing and improving language model performance on specific tasks.",
+    "hops": 3
+  },
+  {
+    "id": "Q059",
+    "question": "What methods or mechanisms have been identified for understanding or improving the capabilities of large language models, as illustrated by analyses of feature-level failure patterns, data augmentation strategies, and architectural designs for in-context learning?",
+    "question_type": "aggregation",
+    "difficulty": "medium",
+    "required_papers": [
+      "2605.22719",
+      "2401.15422",
+      "2401.12973"
+    ],
+    "reasoning": "This question requires all three papers to provide a complete set of examples: the first paper offers insights into failure-specific sparse features, the second covers data augmentation techniques, and the third details n-gram heads for in-context learning. Each paper contributes a distinct category of method or mechanism, and aggregating them gives a broader picture of approaches in LLM research.",
+    "hops": 3
+  },
+  {
+    "id": "Q060",
+    "question": "What methods have been used to probe or enhance language model behavior on specific tasks, including analysis of sparse features for failure cases, input transformations for aspect-based sentiment analysis, and investigation of n-gram heads for in-context learning?",
+    "question_type": "aggregation",
+    "difficulty": "medium",
+    "required_papers": [
+      "2605.22719",
+      "2207.08099",
+      "2401.12973"
+    ],
+    "reasoning": "The question requires all three papers: the first paper exemplifies feature-level analysis of failure on the IOI task; the second paper demonstrates input transformations for aspect-based sentiment analysis; the third paper studies n-gram heads as a mechanism for in-context learning. Together, they provide a diverse set of approaches to understanding and improving model performance on specific tasks.",
+    "hops": 3
+  },
+  {
+    "id": "Q061",
+    "question": "What are some examples of task-specific features or mechanisms that have been identified in language models, covering internal neural features, derived annotation features, and architectural mechanisms, as reported in recent studies?",
+    "question_type": "aggregation",
+    "difficulty": "medium",
+    "required_papers": [
+      "2605.22719",
+      "2501.17510",
+      "2401.12973"
+    ],
+    "reasoning": "This question requires Paper 1 for SAE features related to IOI task failure/success, Paper 2 for symptom annotation features derived from Flan for depression detection, and Paper 3 for n-gram heads as a specialized architectural mechanism for in-context learning. Together they provide a cross-section of different types of features/mechanisms in language models.",
+    "hops": 3
+  },
+  {
+    "id": "Q062",
+    "question": "What are the different types of failures observed in language models across various tasks, and how do these failures manifest in terms of model behavior or user experience?",
+    "question_type": "aggregation",
+    "difficulty": "medium",
+    "required_papers": [
+      "2605.22719",
+      "2503.22610",
+      "2401.12973"
+    ],
+    "reasoning": "This question requires all three papers because each paper documents a distinct type of failure: the first paper (2605.22719) describes task-specific failures in GPT-2 small on IOI, linked to specific SAE features; the second paper (2503.22610) reports user-observed failures in MLLMs for visually impaired users, such as hallucinations and lack of cultural sensitivity; the third paper (2401.12973) discusses failures in in-context language learning for non-transformer architectures compared to transformers. Together, they provide a comprehensive view of failures across model architectures, tasks, and user contexts.",
+    "hops": 3
+  },
+  {
+    "id": "Q063",
+    "question": "What empirical findings have been reported regarding the internal mechanisms of transformer language models, including the role of specific features in task success, the redundancy of certain layers, and the functional components enabling in-context learning?",
+    "question_type": "aggregation",
+    "difficulty": "medium",
+    "required_papers": [
+      "2605.22719",
+      "2404.05741",
+      "2401.12973"
+    ],
+    "reasoning": "This question requires all three papers because each paper provides a distinct empirical finding about transformer internal mechanisms: the first identifies sparse features that correlate with success/failure on the IOI task, the second demonstrates that skipping attention sublayers is an effective compression method implying redundancy, and the third reveals specialized 'n-gram heads' (higher-order induction heads) that enable in-context learning. Together they give a multi-faceted view of internal mechanisms.",
+    "hops": 3
+  },
+  {
+    "id": "Q064",
+    "question": "What techniques have been proposed to improve the understanding and performance of in-context learning in language models, and what evidence exists for the mechanisms underlying failures in specific tasks?",
+    "question_type": "aggregation",
+    "difficulty": "hard",
+    "required_papers": [
+      "2605.22719",
+      "2401.12406",
+      "2401.12973"
+    ],
+    "reasoning": "This question requires all three papers: 2605.22719 provides evidence of failures in the IOI task and links them to specific sparse features; 2401.12406 proposes a calibration technique (LinC) to improve ICL performance; 2401.12973 explores architectural and algorithmic factors (e.g., n-gram heads) that enable ICL. Together, they cover both techniques for improvement and mechanistic understanding of failures, giving a complete picture.",
+    "hops": 3
+  },
+  {
+    "id": "Q065",
+    "question": "What methods have been proposed to analyze or improve language model performance on tasks involving unusual or difficult patterns, such as rare scripts, specific grammatical structures, or complex reasoning tasks?",
+    "question_type": "aggregation",
+    "difficulty": "hard",
+    "required_papers": [
+      "2605.22719",
+      "2501.17785",
+      "2401.12973"
+    ],
+    "reasoning": "This question requires information from all three papers: the first paper discusses failure analysis of GPT-2 on IOI tasks using sparse autoencoder features; the second paper introduces a multimodal dataset for evaluating LLMs on rare scripts; the third paper examines in-context learning abilities and specialized mechanisms like n-gram heads. Together, they provide a comprehensive overview of different methodological approaches to studying language model behavior on challenging tasks.",
+    "hops": 3
+  },
+  {
+    "id": "Q066",
+    "question": "What failure modes in GPT-2 small's performance on the Indirect Object Identification task, as revealed by sparse-feature analysis, might be mitigated by training on adversarially generated unanswerable questions, and how could the in-context learning mechanisms of transformer language models explain the effectiveness of such mitigation?",
+    "question_type": "causal",
+    "difficulty": "hard",
+    "required_papers": [
+      "2605.22719",
+      "1806.03822",
+      "2401.12973"
+    ],
+    "reasoning": "This question requires the first paper to identify specific failures in GPT-2 small's IOI task via sparse-feature analysis, the second paper to provide the method (adversarial unanswerable questions) that could reduce such failures by making the model more robust, and the third paper to explain the underlying in-context learning mechanisms (like n-gram heads) that would allow the model to adjust its behavior when exposed to such training data.",
+    "hops": 3
+  },
+  {
+    "id": "Q067",
+    "question": "What limitations in understanding why language models fail on specific tasks, such as the Indirect Object Identification (IOI) task, motivated the development of automated tool generation from REST API documentation, and how does the architectural capacity for in-context learning, particularly via specialized 'n-gram heads,' explain the need for such external tool integration?",
+    "question_type": "causal",
+    "difficulty": "hard",
+    "required_papers": [
+      "2605.22719",
+      "2501.16945",
+      "2401.12973"
+    ],
+    "reasoning": "This question requires all three papers: (1) The IOI failure audit reveals specific feature-level failures in GPT-2 small, highlighting the model's brittleness. (2) The ToolFactory paper proposes automating tool generation to overcome LLM limitations in executing real-world tasks via APIs. (3) The ICLL paper explains that transformers rely on specialized 'n-gram heads' for in-context learning, which may not suffice for tasks requiring external knowledge or tools. Together, they allow reasoning about how intrinsic architectural constraints (ICLL) and observed task failures (IOI audit) causally motivate the development of external tool integration systems (ToolFactory).",
+    "hops": 3
+  },
+  {
+    "id": "Q068",
+    "question": "What limitations of standard preference alignment methods, as identified through sparse-feature analysis of language model failures, motivate the development of unlearning-based alignment, and how does this connect to the in-context learning abilities modeled by n-gram heads?",
+    "question_type": "causal",
+    "difficulty": "hard",
+    "required_papers": [
+      "2605.22719",
+      "2504.06659",
+      "2401.12973"
+    ],
+    "reasoning": "This question requires Paper 1 (2605.22719) to understand how specific SAE features correlate with task failures in GPT-2, providing evidence of internal model limitations. Paper 2 (2504.06659) proposes an unlearning-based alternative to RLHF, motivated by the high cost and instability of standard preference alignment. Paper 3 (2401.12973) explains the in-context learning mechanism via n-gram heads, which is relevant to understanding how models can learn from examples without explicit alignment. The causal link is that the failure modes revealed by sparse-feature auditing (Paper 1) expose weaknesses in standard alignment (Paper 2) that are tied to the model's in-context learning architecture (Paper 3), thus motivating the shift to unlearning-based alignment.",
+    "hops": 3
+  },
+  {
+    "id": "Q069",
+    "question": "What limitations in GPT-2's attention mechanisms, as evidenced by feature-level failures on the IOI task, motivated the development of aspect-specific input transformations for PLMs, and how do these transformations exploit the n-gram head capabilities that distinguish Transformers from other architectures?",
+    "question_type": "causal",
+    "difficulty": "hard",
+    "required_papers": [
+      "2605.22719",
+      "2207.08099",
+      "2401.12973"
+    ],
+    "reasoning": "Paper 2605.22719 identifies specific sparse features in GPT-2 that fire differently on failed IOI trials, revealing attention limitations. Paper 2207.08099 proposes aspect-specific input transformations for PLMs to overcome such limitations in context modeling. Paper 2401.12973 shows that Transformers' ICL ability relies on n-gram heads, which these transformations are designed to leverage. Thus, all three papers are needed to establish the causal chain: failures \u2192 motivation \u2192 solution \u2192 mechanism.",
+    "hops": 3
+  },
+  {
+    "id": "Q070",
+    "question": "How do failures of n-gram heads (higher-order induction heads) causally explain the feature-level activation differences observed in GPT-2 small's unsuccessful versus successful Indirect Object Identification trials, and what do phonetically challenging tongue twisters reveal about the broader limitations of these mechanisms?",
+    "question_type": "causal",
+    "difficulty": "hard",
+    "required_papers": [
+      "2605.22719",
+      "2209.06275",
+      "2401.12973"
+    ],
+    "reasoning": "The causal claim is that n-gram heads (from paper 2401.12973) are responsible for successful IOI performance; their malfunction causes failures. Paper 2605.22719 provides the sparse feature audit evidence showing which features differ on failures, implicating specific mechanisms. Paper 2209.06275 introduces phonetically difficult tongue twisters as a separate task that also challenges these n-gram head mechanisms, demonstrating a broader causal limitation. All three papers are required: the two probing different failure modes and the third defining the architectural mechanism.",
+    "hops": 3
+  },
+  {
+    "id": "Q071",
+    "question": "Why did the observation that specific sparse features in GPT-2 small are causally linked to IOI task failures motivate the development of a self-distillation method that avoids external supervision, and how does this relate to the reliance on n-gram heads for in-context learning?",
+    "question_type": "causal",
+    "difficulty": "hard",
+    "required_papers": [
+      "2605.22719",
+      "2605.22675",
+      "2401.12973"
+    ],
+    "reasoning": "This question requires all three papers: (1) The first paper identifies sparse features that fire differently on failed vs. successful IOI trials, providing evidence of specific failure mechanisms. (2) The second paper proposes self-policy distillation via subspace projection to improve LLM training without costly external signals, which is motivated by the need to address such failure patterns more efficiently. (3) The third paper explains that in-context learning in transformers relies on specialized 'n-gram heads', linking the failure patterns to a known architectural mechanism and justifying why the distillation method targets capability-selective subspaces. Answering the question requires connecting the empirical failure evidence (paper 1) to the design of the distillation approach (paper 2) and the theoretical grounding in ICL mechanisms (paper 3).",
+    "hops": 3
+  },
+  {
+    "id": "Q072",
+    "question": "What limitations of neural architectures, as revealed by feature-level failures in GPT-2 small on the indirect object identification task, led to the development of specialized n-gram heads for in-context learning in transformers and the adoption of hierarchical abstraction in offline goal-conditioned reinforcement learning?",
+    "question_type": "causal",
+    "difficulty": "hard",
+    "required_papers": [
+      "2605.22719",
+      "2401.12973",
+      "2605.22711"
+    ],
+    "reasoning": "Paper 1 identifies specific SAE features that fire differently on failed vs. successful IOI trials, exposing architectural limitations. Paper 3 shows that transformers overcome such limitations using n-gram heads, which compute input-conditional next-token distributions. Paper 2 demonstrates that hierarchical abstraction (a form of structural solution) improves offline GCRL by addressing redundancy and horizon issues\u2014a parallel approach to handling limitations in a different domain. Answering the question requires understanding what failures occur (Paper 1), what architectural fix works for language tasks (Paper 3), and what alternative abstraction principle is effective for RL (Paper 2).",
+    "hops": 3
+  },
+  {
+    "id": "Q073",
+    "question": "What failure patterns in the Indirect Object Identification (IOI) task for GPT-2 small, as identified by sparse-autoencoder feature audits, motivated the development of memory-conditioned training (MCT) to address limitations in knowledge updating, and how does the role of specialized 'n-gram heads' in in-context learning (ICL) explain why MCT improves reasoning without disrupting pre-trained capabilities?",
+    "question_type": "causal",
+    "difficulty": "hard",
+    "required_papers": [
+      "2605.22719",
+      "2504.12523",
+      "2401.12973"
+    ],
+    "reasoning": "This question requires all three papers: (1) The first paper identifies specific failures in IOI via SAE features, providing the motivation for updating knowledge without losing reasoning. (2) The second paper introduces MCT as a solution for knowledge updates that avoids catastrophic forgetting/server disruption. (3) The third paper explains the mechanism of 'n-gram heads' in ICL, which clarifies why MCT's conditioning on memory tokens preserves the ability to generalize from context, linking the observed failures to the architectural solution.",
+    "hops": 3
+  },
+  {
+    "id": "Q074",
+    "question": "How does the tokenization method causally affect the development of n-gram heads in transformers, and how does this in turn influence the sparse feature activations associated with task failure on the Indirect Object Identification task?",
+    "question_type": "causal",
+    "difficulty": "medium",
+    "required_papers": [
+      "2605.22719",
+      "2605.22705",
+      "2401.12973"
+    ],
+    "reasoning": "This question requires all three papers because: Paper 2605.22705 introduces ToaST tokenization, which directly influences model internals. Paper 2401.12973 establishes that specialized 'n-gram heads' are causal mechanisms for in-context learning in transformers. Paper 2605.22719 provides sparse feature audits that identify which features (likely from n-gram heads) differ on failed versus successful IOI trials, linking tokenization choices to mechanistic interpretation of task failure.",
+    "hops": 3
+  },
+  {
+    "id": "Q075",
+    "question": "What limitations of transformer-based in-context learning mechanisms, as identified through sparse feature analysis of GPT-2's failures on the indirect object identification task, motivated the development of multimodal LLM pipelines that integrate acoustic emotion recognition for political speech analysis?",
+    "question_type": "causal",
+    "difficulty": "hard",
+    "required_papers": [
+      "2605.22719",
+      "2605.22732",
+      "2401.12973"
+    ],
+    "reasoning": "This question requires paper 1 to identify which sparse features cause task failures in IOI, paper 3 to connect those failures to specific in-context learning mechanisms (like n-gram heads) that are architecturally limited, and paper 2 to show how the TRUST multimodal pipeline addresses those limitations by incorporating acoustic features, thus establishing a causal chain from architectural weakness to a practical solution.",
+    "hops": 3
+  },
+  {
+    "id": "Q076",
+    "question": "What limitation of standard sparse autoencoder feature analysis on transformer language models motivated the development of clipping-based stabilization techniques for reinforcement learning, and how does the in-context learning ability of transformers relate to the specific features that are disrupted during training instability?",
+    "question_type": "causal",
+    "difficulty": "hard",
+    "required_papers": [
+      "2605.22719",
+      "2605.22703",
+      "2401.12973"
+    ],
+    "reasoning": "This question requires all three papers: the first paper identifies that specific SAE features in GPT-2 small are associated with task success/failure on IOI, highlighting that certain features are critical for correct reasoning. The second paper shows that hard clipping in RLVR causes training instability by rigidly discarding near-boundary signals, which would disrupt those same critical features. The third paper explains that transformers use specialized 'n-gram heads' (higher-order induction heads) for in-context learning, and these heads are likely the source of the features that get disrupted. The causal chain is: the in-context learning mechanism (paper 3) produces features (paper 1) that are vulnerable to clipping instability (paper 2), motivating the need for stochastic recovery of near-boundary signals.",
+    "hops": 3
+  },
+  {
+    "id": "Q077",
+    "question": "What specific failure patterns in GPT-2 small's performance on the Indirect Object Identification task, as revealed by sparse-autoencoder feature analysis, motivated the development of bidirectional pre-training in BERT, and how did the architectural innovations of BERT overcome the limitations of unidirectional models that in-context learning studies later identified as critical for tasks like IOI?",
+    "question_type": "causal",
+    "difficulty": "hard",
+    "required_papers": [
+      "2605.22719",
+      "1810.04805",
+      "2401.12973"
+    ],
+    "reasoning": "This question requires all three papers: the first paper (2605.22719) provides empirical evidence of specific failure modes in GPT-2 small on IOI, which motivates the need for bidirectional context; the second paper (1810.04805) introduces BERT's bidirectional pre-training as a solution to such limitations; the third paper (2401.12973) explains how architectural choices (e.g., transformers vs. recurrent models) and mechanisms like induction heads relate to in-context learning capabilities, linking the failure analysis to broader architectural insights.",
+    "hops": 3
+  },
+  {
+    "id": "Q078",
+    "question": "What failure mode in GPT-2 small's indirect object identification performance, as revealed by sparse-feature auditing, motivated the development of more efficient audio self-supervised learning architectures, and how did that motivation lead to the introduction of the Efficient Audio Transformer?",
+    "question_type": "causal",
+    "difficulty": "hard",
+    "required_papers": [
+      "2605.22719",
+      "2401.03497",
+      "2401.12973"
+    ],
+    "reasoning": "This question requires all three papers: the first paper identifies a specific failure in GPT-2 small's IOI task and audits it using SAE features, providing a concrete example of a limitation in transformer-based models. The second paper introduces EAT as a more efficient audio SSL architecture, motivated by the need to overcome computational demands of existing models. The third paper discusses in-context language learning and how transformers outperform other architectures, which helps explain why the failure in GPT-2 small is significant and why improving efficiency in similar models is important. The causal chain connects the identified failure (paper 1) to the motivation for developing EAT (paper 2), with the architectural insights from paper 3 providing the broader context of transformer capabilities and limitations.",
+    "hops": 3
+  },
+  {
+    "id": "Q079",
+    "question": "Why do recurrent architectures fail at in-context language learning tasks, as evidenced by the sparse-feature audit of GPT-2 small on IOI, and how did this understanding of architectural weaknesses inspire the use of diffusion models for continuous-time survival analysis?",
+    "question_type": "causal",
+    "difficulty": "hard",
+    "required_papers": [
+      "2605.22719",
+      "2605.22776",
+      "2401.12973"
+    ],
+    "reasoning": "This question requires all three papers: paper 1 provides evidence of specific features related to failure on IOI in a transformer, which can be linked to missing n-gram heads; paper 3 explains that recurrent architectures lack these n-gram heads and thus fail at in-context learning; paper 2 proposes SDPM to overcome discretization biases in survival analysis, which are analogous to the limitations of recurrent models. The causal chain is: architectural limitations (paper 3) lead to failures (paper 1) which motivate a new generative approach (paper 2).",
+    "hops": 3
+  },
+  {
+    "id": "Q080",
+    "question": "How does the time and memory trade-off of KV-cache compression in tensor transformer decoding contribute to failures in in-context learning mechanisms, as revealed by sparse feature audits of model activations?",
+    "question_type": "causal",
+    "difficulty": "hard",
+    "required_papers": [
+      "2605.22719",
+      "2503.11108",
+      "2401.12973"
+    ],
+    "reasoning": "Paper 2503.11108 provides the theoretical space and time trade-offs of KV-cache compression in tensor attention, which can cause performance bottlenecks. Paper 2401.12973 identifies specific n-gram heads (higher-order induction heads) as key mechanisms for in-context learning. Paper 2605.22719 uses sparse autoencoder features to audit why GPT-2 small fails on certain in-context learning tasks (IOI). The question requires all three: the compression trade-off to understand a causal constraint, the mechanism to understand what is impaired, and the feature audit to diagnose how failures manifest in activations.",
+    "hops": 3
+  },
+  {
+    "id": "Q081",
+    "question": "What is the text-to-text transfer learning paradigm in NLP, and how has it been applied to classify medical conditions such as mild cognitive impairment from discharge summaries using large language models?",
+    "question_type": "definition",
+    "difficulty": "medium",
+    "required_papers": [
+      "1910.10683",
+      "2312.14184"
+    ],
+    "reasoning": "The first paper introduces the text-to-text framework for transfer learning in NLP, exemplified by the T5 model. The second paper presents a specific application of large language models to medical term classification (identifying mild cognitive impairment). Answering the question requires understanding the transfer learning concept from the first paper and its real-world application from the second.",
+    "hops": 2
+  },
+  {
+    "id": "Q082",
+    "question": "What is interpretable alignment in the context of multimodal systems, and how has it been applied to a task requiring phonetic difficulty and semantic meaning?",
+    "question_type": "definition",
+    "difficulty": "hard",
+    "required_papers": [
+      "2605.22658",
+      "2209.06275"
+    ],
+    "reasoning": "The first paper defines and explores interpretable alignment via sparse autoencoders for reasoning segmentation, providing a clear concept of making model reasoning transparent. The second paper applies a concept of phonetic and semantic alignment in generating tongue twisters, requiring understanding of both phonetic difficulty and semantic meaning. Answering the question fully requires the definition from the first paper and the application from the second, as the application demonstrates a multimodal challenge where interpretable alignment could be relevant.",
+    "hops": 2
+  },
+  {
+    "id": "Q083",
+    "question": "What is transfer learning in natural language processing, and how has it been applied to quality estimation of machine translation outputs?",
+    "question_type": "definition",
+    "difficulty": "medium",
+    "required_papers": [
+      "1910.10683",
+      "2209.06243"
+    ],
+    "reasoning": "The first paper defines and systematically explores transfer learning techniques in NLP, while the second paper applies transfer learning (using pre-trained models and multi-task training) in the COMETKiwi system for quality estimation. Both are needed to define the concept and illustrate a concrete application.",
+    "hops": 2
+  },
+  {
+    "id": "Q084",
+    "question": "What is transfer learning in NLP, and how can it be used to learn structured prediction constraints from data?",
+    "question_type": "definition",
+    "difficulty": "hard",
+    "required_papers": [
+      "1910.10683",
+      "2006.01209"
+    ],
+    "reasoning": "The first paper (1910.10683) provides a comprehensive definition and systematic study of transfer learning in NLP, including pre-training objectives, architectures, and transfer approaches. The second paper (2006.01209) builds on the idea of leveraging learned knowledge (via transfer learning or pre-training) to learn constraints for structured prediction. To answer 'what is transfer learning in NLP and how can it be used to learn structured prediction constraints from data,' a researcher would need to reference the definition and scope from the first paper and then explain the specific method from the second paper, which trains a rectifier network to produce linear constraints, effectively transferring the concept of learning across tasks to the domain of constraint learning.",
+    "hops": 2
+  },
+  {
+    "id": "Q085",
+    "question": "What is interpretable alignment and how can it be utilized to control formality features in machine translation?",
+    "question_type": "definition",
+    "difficulty": "medium",
+    "required_papers": [
+      "2605.22658",
+      "2311.13475"
+    ],
+    "reasoning": "This question requires the SegCompass paper to define interpretable alignment and its mechanism via sparse autoencoders, and the machine translation paper to explain the concept of formality control in target languages and the need for explicit control. Together, they answer how interpretable alignment techniques could be applied to regulate formality in translation, a specific control task.",
+    "hops": 2
+  },
+  {
+    "id": "Q086",
+    "question": "What is meant by 'alignment' in modern AI systems, and how is it applied in both interpretable vision-language reasoning and quantitative dataset compatibility?",
+    "question_type": "definition",
+    "difficulty": "medium",
+    "required_papers": [
+      "2605.22658",
+      "2501.08496"
+    ],
+    "reasoning": "Paper 2605.22658 defines interpretable alignment in the context of reasoning segmentation using sparse autoencoders, while paper 2501.08496 defines and quantifies data alignment via a Task2Vec-based coefficient for downstream model performance. Together, they illustrate two distinct but related applications of the alignment concept, requiring both papers to fully define and exemplify the term.",
+    "hops": 2
+  },
+  {
+    "id": "Q087",
+    "question": "What are sparse autoencoders for interpretable alignment and how can they be applied to enhance curiosity-driven exploration in persistent 3D worlds?",
+    "question_type": "definition",
+    "difficulty": "medium",
+    "required_papers": [
+      "2605.22658",
+      "2605.22814"
+    ],
+    "reasoning": "This question requires paper 1 (SegCompass) to define sparse autoencoders and interpretable alignment, and paper 2 (Remember to be Curious) to provide the context of curiosity-driven exploration in 3D environments. The answer would involve explaining the concept from the first paper and then discussing its potential application in the framework described in the second paper, thus requiring both papers.",
+    "hops": 2
+  },
+  {
+    "id": "Q088",
+    "question": "What is interpretable alignment in vision-language models, and how could it address the challenges of contextual understanding and hallucination in multimodal language models used as visual assistants for visually impaired users?",
+    "question_type": "definition",
+    "difficulty": "medium",
+    "required_papers": [
+      "2605.22658",
+      "2503.22610"
+    ],
+    "reasoning": "The first paper defines interpretable alignment using sparse autoencoders for reasoning segmentation, while the second paper identifies specific challenges (contextual understanding, hallucinations) in MLLMs for visually impaired users. The question requires understanding the concept from the first paper and applying it to the problems outlined in the second.",
+    "hops": 2
+  },
+  {
+    "id": "Q089",
+    "question": "What is sparse autoencoder-based interpretable alignment and how has it been applied to detect and mitigate covert political bias in language models?",
+    "question_type": "definition",
+    "difficulty": "hard",
+    "required_papers": [
+      "2605.22658",
+      "2605.22771"
+    ],
+    "reasoning": "Paper 2605.22658 introduces the concept of interpretable alignment using sparse autoencoders for reasoning segmentation, providing the definition and mechanism. Paper 2605.22771 defines covert political bias and proposes consistency training as a mitigation strategy. Answering the question requires both papers: the first to explain the concept of interpretable alignment, and the second to provide the context and application of that concept to political bias detection and reduction.",
+    "hops": 2
+  },
+  {
+    "id": "Q090",
+    "question": "What is commonsense property modeling and how can it be applied to make reasoning segmentation more interpretable?",
+    "question_type": "definition",
+    "difficulty": "medium",
+    "required_papers": [
+      "2605.22658",
+      "2210.02771"
+    ],
+    "reasoning": "This question requires the second paper (2210.02771) to define and explain the concept of commonsense property modeling, including its challenges and how bi-encoders capture concept\u2013property relationships. The first paper (2605.22658) provides the application\u2014using sparse autoencoders to achieve interpretable alignment in reasoning segmentation, which implicitly relies on commonsense knowledge. Both papers are necessary to answer the question fully: one for the concept's definition and the other for its specific application in a different domain.",
+    "hops": 2
+  },
+  {
+    "id": "Q091",
+    "question": "What is interpretable alignment using sparse autoencoders and how can it address the lack of interpretability in cross-domain adaptation for cognitive load assessment?",
+    "question_type": "definition",
+    "difficulty": "medium",
+    "required_papers": [
+      "2605.22658",
+      "2605.22774"
+    ],
+    "reasoning": "This question requires the first paper (2605.22658) to define interpretable alignment with sparse autoencoders and its role in reasoning segmentation, and the second paper (2605.22774) to provide the context of cross-domain adaptation for cognitive load assessment from wearable ECG, including the challenges of sensor mismatch and task differences. Both papers are needed to understand the concept and its potential application to a specific domain.",
+    "hops": 2
+  },
+  {
+    "id": "Q092",
+    "question": "What is interpretable alignment in the context of vision-language reasoning, and how has question decomposition been used to improve multi-step comprehension tasks?",
+    "question_type": "definition",
+    "difficulty": "hard",
+    "required_papers": [
+      "2605.22658",
+      "1906.02916"
+    ],
+    "reasoning": "The first paper (2605.22658) defines and explores the concept of interpretable alignment for connecting reasoning to visual perception, particularly critiquing opaque methods. The second paper (1906.02916) provides a concrete application of a decomposition-based approach for multi-hop reasoning, which exemplifies a form of interpretable step-by-step comprehension. The question requires both papers: the first to define the concept of interpretable alignment, and the second to show how decomposition (a related interpretable strategy) is applied in multi-hop reading comprehension.",
+    "hops": 2
+  },
+  {
+    "id": "Q093",
+    "question": "What is interpretable alignment and how does it relate to the detection of fake news in specific languages?",
+    "question_type": "definition",
+    "difficulty": "hard",
+    "required_papers": [
+      "2605.22658",
+      "2005.14627"
+    ],
+    "reasoning": "The first paper defines interpretable alignment in the context of reasoning segmentation, contrasting it with opaque methods. The second paper provides an application example of classification in a specific language (Bangla fake news detection), which can be used to illustrate how interpretable alignment could be applied to understand and verify the reasoning behind such classification tasks.",
+    "hops": 2
+  },
+  {
+    "id": "Q094",
+    "question": "How does the concept of Generative Active Task Elicitation (GATE) as a language-model-driven interaction framework for inferring complex human preferences relate to designing an interpretable alignment mechanism for reasoning segmentation, such as using sparse autoencoders to transparently link compositional reasoning to visual perception?",
+    "question_type": "definition",
+    "difficulty": "hard",
+    "required_papers": [
+      "2310.11589",
+      "2605.22658"
+    ],
+    "reasoning": "This question defines GATE as a concept from the first paper and asks how it can be applied to the specific problem of interpretable alignment in reasoning segmentation, which is the focus of the second paper. Both papers are needed: one to define the elicitation methodology and the other to provide the application context and technical approach.",
+    "hops": 2
+  },
+  {
+    "id": "Q095",
+    "question": "What is interpretable alignment in vision-language models and how can it be applied to improve the calibration of multilingual question answering systems?",
+    "question_type": "definition",
+    "difficulty": "medium",
+    "required_papers": [
+      "2605.22658",
+      "2311.08669"
+    ],
+    "reasoning": "The first paper defines and demonstrates interpretable alignment using sparse autoencoders for reasoning segmentation, while the second paper examines calibration in multilingual QA models and identifies challenges such as poor calibration for non-English languages. Answering the question requires understanding interpretable alignment from paper 1 and then discussing how such interpretability could address calibration issues in multilingual QA as studied in paper 2.",
+    "hops": 2
+  },
+  {
+    "id": "Q096",
+    "question": "What is the concept of interpretable alignment in vision-language models, and how does it build on the idea of analyzing model parameters in embedding space?",
+    "question_type": "definition",
+    "difficulty": "medium",
+    "required_papers": [
+      "2605.22658",
+      "2209.02535"
+    ],
+    "reasoning": "The first paper introduces SegCompass, which proposes interpretable alignment using sparse autoencoders for reasoning segmentation, directly addressing the need for transparency in vision-language models. The second paper provides the foundational concept of analyzing Transformer parameters in embedding space, which is essential for understanding how SegCompass achieves interpretability by mapping reasoning to visual perception. Together, they define and apply the concept of interpretable alignment in the context of embedding space analysis.",
+    "hops": 2
+  },
+  {
+    "id": "Q097",
+    "question": "What is interpretable alignment and how has it been applied to improve machine reading comprehension on the SQuAD dataset?",
+    "question_type": "definition",
+    "difficulty": "medium",
+    "required_papers": [
+      "2605.22658",
+      "1606.05250"
+    ],
+    "reasoning": "This question requires SegCompass (2605.22658) to define the concept of interpretable alignment, and SQuAD (1606.05250) to provide the context of the machine reading comprehension dataset and its reasoning challenges, which interpretable alignment aims to address.",
+    "hops": 2
+  },
+  {
+    "id": "Q098",
+    "question": "What is latent retrieval and what are the limitations of its application in interpretable reasoning segmentation, particularly when compared to methods using sparse autoencoders for alignment?",
+    "question_type": "definition",
+    "difficulty": "medium",
+    "required_papers": [
+      "1906.00300",
+      "2605.22658"
+    ],
+    "reasoning": "This question requires paper 2 (1906.00300) to define the concept of latent retrieval in the context of open-domain QA, and paper 1 (2605.22658) to explain how latent methods fall short in interpretable reasoning segmentation, specifically contrasting with sparse autoencoder-based alignment. Both papers are needed to fully answer the definition and the applied critique.",
+    "hops": 2
+  },
+  {
+    "id": "Q099",
+    "question": "What is transfer learning in NLP and how has it been applied to the text-VQA task?",
+    "question_type": "definition",
+    "difficulty": "medium",
+    "required_papers": [
+      "1910.10683",
+      "2311.08622"
+    ],
+    "reasoning": "The first paper (1910.10683) defines and systematically explores transfer learning in NLP, while the second paper (2311.08622) applies transfer learning principles to the text-VQA task through the MQMA approach. The question requires both to explain the concept and its specific application.",
+    "hops": 2
+  },
+  {
+    "id": "Q100",
+    "question": "What is interpretable alignment with sparse autoencoders as introduced in the SegCompass framework, and how can it be applied to improve explainability in multi-hop question answering tasks such as those in HotpotQA?",
+    "question_type": "definition",
+    "difficulty": "medium",
+    "required_papers": [
+      "2605.22658",
+      "1809.09600"
+    ],
+    "reasoning": "The first paper (SegCompass) defines the concept of interpretable alignment using sparse autoencoders for reasoning segmentation, explaining how it differs from opaque black-box methods. The second paper (HotpotQA) introduces a dataset and task for multi-hop question answering that requires explanations and supporting facts. To fully answer the question, one must understand both the concept from SegCompass and its potential application to the multi-hop QA setting described in HotpotQA.",
+    "hops": 2
+  }
+]
